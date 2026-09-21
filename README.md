@@ -10,6 +10,7 @@
 | [docs/decisions/0001-question-and-criteria.md](docs/decisions/0001-question-and-criteria.md) | 問いの採用、予測 P1a・P1b・P2・P3、撤退基準 A・B・C の凍結、見たもの |
 | [docs/results.md](docs/results.md) | 結果（A・B、P1a・P1b・P2・P3、記述）。数値は `docs/data/` |
 | [docs/decisions/0002-verdicts.md](docs/decisions/0002-verdicts.md) | 判定、時刻の記録、事前登録からの逸脱 |
+| [docs/decisions/0003-why-question-and-criteria.md](docs/decisions/0003-why-question-and-criteria.md) | 問い「npm の急増は何だったのか、どこまでが本当の伸びか」の追加。予測 Q1・Q2 と記述 Q3・Q4 の凍結（2026-09-21、代理指標の値は未取得） |
 | [docs/posthoc.md](docs/posthoc.md) | 事後の参考表（事前登録に無い集計。判定には使わない） |
 | [docs/sources.md](docs/sources.md) | 確認済みの事実と出典（API の仕様、3 ツールの配布のしかた、npm 上のパッケージ構造、利用条件、先行） |
 

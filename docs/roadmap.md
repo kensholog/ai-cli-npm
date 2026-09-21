@@ -15,6 +15,7 @@
 | 0.5 | 予測 P1a・P1b・P2・P3 と撤退基準 A・B・C の凍結 | **2026-09-21** | [decisions/0001](decisions/0001-question-and-criteria.md) |
 | 1 | 取得（npm range・point・版別・レジストリ・Homebrew、40 リクエスト） | **2026-09-21** | `data/`（非公開） |
 | 2 | A・B の判定 → P1a・P1b・P2・P3 と記述 | **2026-09-21**（A・B 通過、C を満たす） | [results.md](results.md)、`docs/data/`、[decisions/0002](decisions/0002-verdicts.md)、[posthoc.md](posthoc.md) |
+| 2.5 | 問いの追加「npm の急増は何だったのか」: 予測 Q1・Q2、記述 Q3・Q4 の凍結 → issue・Releases・Hacker News の取得 → 判定 | 凍結 **2026-09-21**（[decisions/0003](decisions/0003-why-question-and-criteria.md)）。取得は未着手 | decisions/0004、`docs/results_why.md` |
 | 3 | 記事（zenn-content で執筆。平日、2026-10-05 以降に公開） | 図 3 枚と下書きまで（2026-09-21）。公開前に、値が 0 の日を 3 リクエストで再確認する | `scripts/figures.py` |
 
 ## やらないこと
