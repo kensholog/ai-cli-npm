@@ -13,8 +13,8 @@
 |---|---|---|---|
 | 0 | データの到達・利用条件・先行の確認（値は見ない） | **通過（2026-09-21）** | [sources.md](sources.md) |
 | 0.5 | 予測 P1a・P1b・P2・P3 と撤退基準 A・B・C の凍結 | **2026-09-21** | [decisions/0001](decisions/0001-question-and-criteria.md) |
-| 1 | 取得（npm range・版別・レジストリ・Homebrew、30 リクエスト前後） | 未着手 | `data/`（非公開） |
-| 2 | A・B の判定 → P1a・P1b・P2・P3 と記述 | 未着手 | `docs/results.md`、`docs/data/*.csv`、decisions/0002 |
+| 1 | 取得（npm range・point・版別・レジストリ・Homebrew、40 リクエスト） | **2026-09-21** | `data/`（非公開） |
+| 2 | A・B の判定 → P1a・P1b・P2・P3 と記述 | **2026-09-21**（A・B 通過、C を満たす） | [results.md](results.md)、`docs/data/`、[decisions/0002](decisions/0002-verdicts.md)、[posthoc.md](posthoc.md) |
 | 3 | 記事（zenn-content で執筆。平日、2026-10-05 以降に公開） | 未着手 | ── |
 
 ## やらないこと

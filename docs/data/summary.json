@@ -1,0 +1,609 @@
+{
+ "fetch_date_utc": "2026-09-21",
+ "last_day": "2026-09-19",
+ "window_30d": [
+  "2026-08-21",
+  "2026-09-19"
+ ],
+ "n_requests": 40,
+ "non_200": [
+  {
+   "url": "https://formulae.brew.sh/api/formula/codex.json",
+   "status": 404
+  }
+ ],
+ "A": {
+  "per_tool": {
+   "claude": {
+    "pub_date": "2025-02-24",
+    "last_day": "2026-09-19",
+    "n_expected": 573,
+    "n_missing": 0,
+    "missing_dates": [],
+    "first_nonzero": "2025-02-24",
+    "n_zero_days_after_first_nonzero": 10,
+    "zero_days": [
+     "2026-06-03",
+     "2026-07-09",
+     "2026-07-12",
+     "2026-07-26",
+     "2026-08-14",
+     "2026-09-03",
+     "2026-09-07",
+     "2026-09-08",
+     "2026-09-15",
+     "2026-09-17"
+    ],
+    "ok": true,
+    "n_versions_time": 525,
+    "n_versions_listed": 521,
+    "n_stable_time": 525,
+    "n_stable_listed": 521,
+    "stable_missing_time": [],
+    "last_stable_date": "2026-09-19"
+   },
+   "codex": {
+    "pub_date": "2025-04-16",
+    "last_day": "2026-09-19",
+    "n_expected": 522,
+    "n_missing": 0,
+    "missing_dates": [],
+    "first_nonzero": "2025-04-16",
+    "n_zero_days_after_first_nonzero": 10,
+    "zero_days": [
+     "2025-10-21",
+     "2026-06-04",
+     "2026-07-09",
+     "2026-07-12",
+     "2026-08-14",
+     "2026-09-03",
+     "2026-09-07",
+     "2026-09-08",
+     "2026-09-15",
+     "2026-09-17"
+    ],
+    "ok": true,
+    "n_versions_time": 4672,
+    "n_versions_listed": 4672,
+    "n_stable_time": 188,
+    "n_stable_listed": 188,
+    "stable_missing_time": [],
+    "last_stable_date": "2026-09-18"
+   },
+   "gemini": {
+    "pub_date": "2025-06-25",
+    "last_day": "2026-09-19",
+    "n_expected": 452,
+    "n_missing": 0,
+    "missing_dates": [],
+    "first_nonzero": "2025-06-25",
+    "n_zero_days_after_first_nonzero": 9,
+    "zero_days": [
+     "2026-06-05",
+     "2026-07-12",
+     "2026-08-14",
+     "2026-09-02",
+     "2026-09-03",
+     "2026-09-07",
+     "2026-09-08",
+     "2026-09-15",
+     "2026-09-17"
+    ],
+    "ok": true,
+    "n_versions_time": 755,
+    "n_versions_listed": 754,
+    "n_stable_time": 197,
+    "n_stable_listed": 196,
+    "stable_missing_time": [],
+    "last_stable_date": "2026-09-15"
+   }
+  },
+  "ok": true
+ },
+ "B": {
+  "window": [
+   "2026-08-21",
+   "2026-09-19"
+  ],
+  "per_tool": {
+   "claude": {
+    "range_sum": 61861381,
+    "point": 61861381,
+    "rel_diff": 0.0,
+    "ok": true
+   },
+   "codex": {
+    "range_sum": 78292095,
+    "point": 78292095,
+    "rel_diff": 0.0,
+    "ok": true
+   },
+   "gemini": {
+    "range_sum": 1359228,
+    "point": 1359228,
+    "rel_diff": 0.0,
+    "ok": true
+   }
+  },
+  "ok": true
+ },
+ "P1a": {
+  "n_keys": 4324,
+  "n_platform_keys": 3631,
+  "total": 15057834,
+  "platform_total": 7749975,
+  "stable_total": 7283980,
+  "other_prerelease_total": 23879,
+  "by_suffix": {
+   "-darwin-arm64": 365492,
+   "-darwin-x64": 89750,
+   "-linux-arm64": 310992,
+   "-linux-x64": 6418379,
+   "-win32-arm64": 62834,
+   "-win32-x64": 502528
+  },
+  "s": 0.5146805974883241,
+  "verdict": "支持"
+ },
+ "P1a_reference_other_tools": {
+  "claude": {
+   "n_keys": 521,
+   "n_platform_keys": 0,
+   "total": 9211672,
+   "platform_total": 0,
+   "s": 0.0
+  },
+  "gemini": {
+   "n_keys": 374,
+   "n_platform_keys": 0,
+   "total": 288798,
+   "platform_total": 0,
+   "s": 0.0
+  }
+ },
+ "versions_total_vs_point_lastweek": {
+  "claude": {
+   "versions_total": 9211672,
+   "point_lastweek": 9211672,
+   "point_window": [
+    "2026-09-14",
+    "2026-09-20"
+   ]
+  },
+  "codex": {
+   "versions_total": 15057834,
+   "point_lastweek": 15057834,
+   "point_window": [
+    "2026-09-14",
+    "2026-09-20"
+   ]
+  },
+  "gemini": {
+   "versions_total": 288798,
+   "point_lastweek": 288798,
+   "point_window": [
+    "2026-09-14",
+    "2026-09-20"
+   ]
+  }
+ },
+ "P1b": {
+  "per_tool": {
+   "claude": {
+    "before": [
+     "2026-01-14",
+     "2026-02-10"
+    ],
+    "after": [
+     "2026-02-25",
+     "2026-03-24"
+    ],
+    "median_before": 1172383.0,
+    "median_after": 1592218.5,
+    "ratio": 1.3581043908006172
+   },
+   "codex": {
+    "before": [
+     "2026-01-14",
+     "2026-02-10"
+    ],
+    "after": [
+     "2026-02-25",
+     "2026-03-24"
+    ],
+    "median_before": 93478.0,
+    "median_after": 440611.0,
+    "ratio": 4.713526177282355
+   },
+   "gemini": {
+    "before": [
+     "2026-01-14",
+     "2026-02-10"
+    ],
+    "after": [
+     "2026-02-25",
+     "2026-03-24"
+    ],
+    "median_before": 87342.5,
+    "median_after": 98851.5,
+    "ratio": 1.1317686120731603
+   }
+  },
+  "others_mean": 1.2449365014368887,
+  "did": 3.7861579059189503,
+  "verdict": "支持"
+ },
+ "P2": {
+  "claude": {
+   "window": [
+    "2026-03-24",
+    "2026-09-19"
+   ],
+   "n_release_days_in_window": 134,
+   "n_release": 122,
+   "n_other": 7,
+   "median_release": 1840722.5,
+   "median_other": 1684117,
+   "ratio": 1.0929896794581375,
+   "verdict": "判定不能"
+  },
+  "codex": {
+   "window": [
+    "2026-03-24",
+    "2026-09-19"
+   ],
+   "n_release_days_in_window": 49,
+   "n_release": 75,
+   "n_other": 54,
+   "median_release": 1898252,
+   "median_other": 1559173.5,
+   "ratio": 1.2174732318115977,
+   "verdict": "跳ねる"
+  },
+  "gemini": {
+   "window": [
+    "2026-03-24",
+    "2026-09-19"
+   ],
+   "n_release_days_in_window": 40,
+   "n_release": 62,
+   "n_other": 67,
+   "median_release": 104617.5,
+   "median_other": 74764,
+   "ratio": 1.3993031405489273,
+   "verdict": "跳ねる"
+  }
+ },
+ "P3": {
+  "codex_formula": {
+   "same_tool": false,
+   "reason": "formula codex のメタデータが取れない",
+   "homepage": null,
+   "desc": null,
+   "stable_url": null
+  },
+  "sources": {
+   "claude": [
+    [
+     "cask",
+     "claude-code"
+    ],
+    [
+     "cask",
+     "claude-code@latest"
+    ]
+   ],
+   "codex": [
+    [
+     "cask",
+     "codex"
+    ]
+   ],
+   "gemini": [
+    [
+     "formula",
+     "gemini-cli"
+    ]
+   ]
+  },
+  "periods": {
+   "30d": {
+    "npm_window": [
+     "2026-08-21",
+     "2026-09-19"
+    ],
+    "npm": {
+     "claude": 61861381,
+     "codex": 78292095,
+     "gemini": 1359228
+    },
+    "npm_rank": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "brew_window": [
+     "2026-08-22",
+     "2026-09-21"
+    ],
+    "brew_parts": {
+     "claude": {
+      "cask:claude-code": 29636,
+      "cask:claude-code@latest": 5928
+     },
+     "codex": {
+      "cask:codex": 80787
+     },
+     "gemini": {
+      "formula:gemini-cli": 3651
+     }
+    },
+    "brew": {
+     "claude": 35564,
+     "codex": 80787,
+     "gemini": 3651
+    },
+    "brew_rank": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "same_order": true
+   },
+   "90d": {
+    "npm_window": [
+     "2026-06-22",
+     "2026-09-19"
+    ],
+    "npm": {
+     "claude": 173534747,
+     "codex": 198799600,
+     "gemini": 5024286
+    },
+    "npm_rank": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "brew_window": [
+     "2026-06-23",
+     "2026-09-21"
+    ],
+    "brew_parts": {
+     "claude": {
+      "cask:claude-code": 189175,
+      "cask:claude-code@latest": 25825
+     },
+     "codex": {
+      "cask:codex": 283370
+     },
+     "gemini": {
+      "formula:gemini-cli": 27406
+     }
+    },
+    "brew": {
+     "claude": 215000,
+     "codex": 283370,
+     "gemini": 27406
+    },
+    "brew_rank": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "same_order": true
+   },
+   "365d": {
+    "npm_window": [
+     "2025-09-20",
+     "2026-09-19"
+    ],
+    "npm": {
+     "claude": 465005929,
+     "codex": 526459636,
+     "gemini": 26719019
+    },
+    "npm_rank": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "brew_window": [
+     "2025-09-21",
+     "2026-09-21"
+    ],
+    "brew_parts": {
+     "claude": {
+      "cask:claude-code": 1125985,
+      "cask:claude-code@latest": 82893
+     },
+     "codex": {
+      "cask:codex": 795896
+     },
+     "gemini": {
+      "formula:gemini-cli": 804319
+     }
+    },
+    "brew": {
+     "claude": 1208878,
+     "codex": 795896,
+     "gemini": 804319
+    },
+    "brew_rank": [
+     "claude",
+     "gemini",
+     "codex"
+    ],
+    "same_order": false
+   }
+  },
+  "reference_install_on_request": {
+   "30d": {
+    "gemini-cli": 3648,
+    "codex": 43
+   },
+   "90d": {
+    "gemini-cli": 27384,
+    "codex": 118
+   },
+   "365d": {
+    "gemini-cli": 804024,
+    "codex": 47618
+   }
+  }
+ },
+ "registry_checks": {
+  "codex_first_alias_version": [
+   "0.99.0",
+   "2026-02-11"
+  ],
+  "claude_first_platform_dep_version": [
+   "2.1.113",
+   "2026-04-17"
+  ]
+ },
+ "desc": {
+  "a_claude_platform_share": {
+   "window": [
+    "2026-08-21",
+    "2026-09-19"
+   ],
+   "totals": {
+    "@anthropic-ai/claude-code-darwin-arm64": 7996902,
+    "@anthropic-ai/claude-code-darwin-x64": 430892,
+    "@anthropic-ai/claude-code-linux-arm64": 2551785,
+    "@anthropic-ai/claude-code-linux-arm64-musl": 284932,
+    "@anthropic-ai/claude-code-linux-x64": 47129561,
+    "@anthropic-ai/claude-code-linux-x64-musl": 2116302,
+    "@anthropic-ai/claude-code-win32-arm64": 178116,
+    "@anthropic-ai/claude-code-win32-x64": 7251956
+   },
+   "total": 67940446,
+   "linux_share": 0.76659167059339,
+   "shares": {
+    "@anthropic-ai/claude-code-darwin-arm64": 0.11770458498314833,
+    "@anthropic-ai/claude-code-darwin-x64": 0.006342201521609087,
+    "@anthropic-ai/claude-code-linux-arm64": 0.037559144077446885,
+    "@anthropic-ai/claude-code-linux-arm64-musl": 0.004193849419239903,
+    "@anthropic-ai/claude-code-linux-x64": 0.6936893084275603,
+    "@anthropic-ai/claude-code-linux-x64-musl": 0.031149368669142974,
+    "@anthropic-ai/claude-code-win32-arm64": 0.0026216489659193582,
+    "@anthropic-ai/claude-code-win32-x64": 0.10673989393593325
+   }
+  },
+  "b_weekday_weekend": {
+   "claude": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "median_weekday": 1834994,
+    "median_weekend": 923170,
+    "ratio": 1.9877097392679572
+   },
+   "codex": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "median_weekday": 1782369,
+    "median_weekend": 1257684,
+    "ratio": 1.4171834896524087
+   },
+   "gemini": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "median_weekday": 84380,
+    "median_weekend": 56516,
+    "ratio": 1.493028522896171
+   }
+  },
+  "c_claude_split": {
+   "claude": {
+    "before": [
+     "2026-03-16",
+     "2026-04-12"
+    ],
+    "after": [
+     "2026-04-27",
+     "2026-05-24"
+    ],
+    "median_before": 1654715.0,
+    "median_after": 1160311.0,
+    "ratio": 0.701215012857199
+   },
+   "codex": {
+    "before": [
+     "2026-03-16",
+     "2026-04-12"
+    ],
+    "after": [
+     "2026-04-27",
+     "2026-05-24"
+    ],
+    "median_before": 453494.0,
+    "median_after": 1074022.0,
+    "ratio": 2.368326813585185
+   },
+   "gemini": {
+    "before": [
+     "2026-03-16",
+     "2026-04-12"
+    ],
+    "after": [
+     "2026-04-27",
+     "2026-05-24"
+    ],
+    "median_before": 99428.5,
+    "median_after": 105524.5,
+    "ratio": 1.0613103888724058
+   }
+  },
+  "d_tue_wed": {
+   "claude": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "n_tue_wed": 52,
+    "n_other": 77,
+    "median_tue_wed": 1938611.5,
+    "median_other": 1755077,
+    "ratio": 1.1045734745541078
+   },
+   "codex": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "n_tue_wed": 52,
+    "n_other": 77,
+    "median_tue_wed": 1839168.0,
+    "median_other": 1669350,
+    "ratio": 1.1017270194986073
+   },
+   "gemini": {
+    "window": [
+     "2026-03-24",
+     "2026-09-19"
+    ],
+    "n_tue_wed": 52,
+    "n_other": 77,
+    "median_tue_wed": 82540.5,
+    "median_other": 84550,
+    "ratio": 0.9762329982259018
+   }
+  }
+ },
+ "C": {
+  "determinate": [
+   "P1a",
+   "P1b",
+   "P2:codex",
+   "P2:gemini"
+  ],
+  "ok": true
+ }
+}

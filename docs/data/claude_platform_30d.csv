@@ -1,0 +1,9 @@
+package,downloads_30d,share
+@anthropic-ai/claude-code-linux-x64,47129561,0.693689
+@anthropic-ai/claude-code-darwin-arm64,7996902,0.117705
+@anthropic-ai/claude-code-win32-x64,7251956,0.106740
+@anthropic-ai/claude-code-linux-arm64,2551785,0.037559
+@anthropic-ai/claude-code-linux-x64-musl,2116302,0.031149
+@anthropic-ai/claude-code-darwin-x64,430892,0.006342
+@anthropic-ai/claude-code-linux-arm64-musl,284932,0.004194
+@anthropic-ai/claude-code-win32-arm64,178116,0.002622
