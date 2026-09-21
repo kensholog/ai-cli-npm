@@ -1,0 +1,131 @@
+date,title,label,product
+2025-05-19,Codex in the ChatGPT iOS app,codex-app,codex
+2025-05-22,Reworked environment page,general,codex
+2025-06-03,June update,general,codex
+2025-06-13,Best of N,general,codex
+2025-08-21,Mid August update,general,codex
+2025-08-27,Late August update,general,codex
+2025-09-15,Introducing GPT-5-Codex,general,codex
+2025-09-23,GPT-5-Codex in the API,general,codex
+2025-10-06,Codex is now GA,general,codex
+2025-10-22,Tag @Codex on GitHub Issues and PRs,general,codex
+2025-10-30,Credits on ChatGPT Pro and Plus,general,codex
+2025-11-06,GPT-5-Codex model update,general,codex
+2025-11-07,Introducing GPT-5-Codex-Mini,general,codex
+2025-11-13,Introducing GPT-5.1-Codex and GPT-5.1-Codex-Mini,general,codex
+2025-11-18,Introducing GPT-5.1-Codex-Max,general,codex
+2025-11-24,Usage and credits fixes,general,codex
+2025-12-04,Introducing Codex for Linear,general,codex
+2025-12-18,Introducing GPT-5.2-Codex,general,codex
+2025-12-19,Agent skills in Codex,general,codex
+2026-01-14,GPT-5.2-Codex API availability,general,codex
+2026-01-22,Custom prompts deprecated,general,codex
+2026-01-23,Team Config for shared configuration,general,codex
+2026-01-28,Web search is now enabled by default,general,codex
+2026-02-02,Introducing the Codex app,codex-app,codex
+2026-02-03,Codex app 26.203,codex-app,codex
+2026-02-04,Codex app 26.204,codex-app,codex
+2026-02-05,Introducing GPT-5.3-Codex,general,codex
+2026-02-05,Codex app 26.205,codex-app,codex
+2026-02-06,Codex app 26.206,codex-app,codex
+2026-02-08,Codex app 26.208,codex-app,codex
+2026-02-09,GPT-5.3-Codex in Cursor and VS Code,general,codex
+2026-02-10,Codex app 26.210,codex-app,codex
+2026-02-12,Introducing GPT-5.3-Codex-Spark,general,codex
+2026-02-12,Codex app 26.212,codex-app,codex
+2026-02-17,Codex app 26.217,codex-app,codex
+2026-02-26,Codex app 26.226,codex-app,codex
+2026-02-27,Codex app 26.227,codex-app,codex
+2026-02-28,Codex app 26.228,codex-app,codex
+2026-03-03,Codex app 26.303,codex-app,codex
+2026-03-04,Codex app 26.304,codex-app,codex
+2026-03-05,Introducing GPT-5.4 in Codex,general,codex
+2026-03-05,Codex app 26.305,codex-app,codex
+2026-03-11,Codex app 26.311,codex-app,codex
+2026-03-12,Codex app 26.312,codex-app,codex
+2026-03-16,Codex app 26.313,codex-app,codex
+2026-03-17,Introducing GPT-5.4 mini in Codex,general,codex
+2026-03-18,Codex app 26.317,codex-app,codex
+2026-03-19,"Codex app 26.318, 26.319",codex-app,codex
+2026-03-20,Codex app 26.320,codex-app,codex
+2026-03-24,Codex app 26.323,codex-app,codex
+2026-03-25,Build and install plugins in Codex,general,codex
+2026-03-25,Codex app 26.324,codex-app,codex
+2026-04-01,"Codex app 26.325, 26.331, 26.401",codex-app,codex
+2026-04-07,Codex model availability update,general,codex
+2026-04-09,Codex app 26.406,codex-app,codex
+2026-04-10,Codex app 26.409,codex-app,codex
+2026-04-12,Codex app 26.410,codex-app,codex
+2026-04-16,Codex can now help with more of your work 26.415,codex-app,codex
+2026-04-20,Codex app 26.417,codex-app,codex
+2026-04-23,GPT-5.5 and Codex app updates,general,codex
+2026-04-24,Codex app 26.423,codex-app,codex
+2026-05-05,Create Codex access tokens,general,codex
+2026-05-05,Codex app 26.429,codex-app,codex
+2026-05-06,Codex analytics governance docs update,general,codex
+2026-05-07,Codex for Chrome,codex-app,codex
+2026-05-08,Codex app 26.506,codex-app,codex
+2026-05-11,Expanded Auto-review documentation,general,codex
+2026-05-14,Work with Codex from anywhere,"general,codex-mobile",codex
+2026-05-18,ChatGPT for iOS 1.2026.132,codex-mobile,codex
+2026-05-21,"Appshots, goal mode, and more 26.519",codex-app,codex
+2026-05-25,ChatGPT for iOS 1.2026.139,codex-mobile,codex
+2026-05-26,GPT-5.3-Codex and GPT-5.2 deprecated,general,codex
+2026-05-29,Computer use and mobile access on Windows 26.527,codex-app,codex
+2026-06-01,Use Codex with Amazon Bedrock,general,codex
+2026-06-01,Terminal placement controls 26.601,codex-app,codex
+2026-06-02,Build and deploy websites with Sites,codex-app,codex
+2026-06-02,ChatGPT for iOS 1.2026.146,codex-mobile,codex
+2026-06-04,Codex app updates 26.602,codex-app,codex
+2026-06-09,Codex app 26.608,codex-app,codex
+2026-06-09,ChatGPT for iOS 1.2026.153,codex-mobile,codex
+2026-06-11,Usage resets and Browser Developer mode 26.609,codex-app,codex
+2026-06-15,ChatGPT for iOS 1.2026.160,codex-mobile,codex
+2026-06-16,"More Codex features in the EEA, UK, and Switzerland",codex-app,codex
+2026-06-18,Record & Replay and remote task handoff 26.616,codex-app,codex
+2026-06-22,ChatGPT for iOS 1.2026.167,codex-mobile,codex
+2026-06-25,Codex Remote reaches general availability,"general,codex-app,codex-mobile",codex
+2026-07-06,ChatGPT for iOS 1.2026.181,codex-mobile,codex
+2026-07-09,Codex joins the ChatGPT desktop app 26.707,codex-app,codex
+2026-07-13,ChatGPT for iOS 1.2026.188,codex-mobile,codex
+2026-07-20,ChatGPT for iOS 1.2026.195,codex-mobile,codex
+2026-07-23,ChatGPT Voice and multi-folder projects 26.715,codex-app,codex
+2026-07-27,ChatGPT for iOS 1.2026.202,codex-mobile,codex
+2026-07-29,Sign in with ChatGPT (beta),general,codex
+2026-07-30,"Browser upgrades, multi-repository review, and image editing 26.727",codex-app,codex
+2026-07-31,GPT-5.4 and GPT-5.4 mini retire from Codex on August 31,general,codex
+2026-07-31,"Record & Replay expands to the EU, UK, and Switzerland",codex-app,codex
+2026-08-07,ChatGPT for iOS 1.2026.209,codex-mobile,codex
+2026-08-10,Introducing Daybreak Blue and Daybreak Red,general,codex
+2026-08-11,Linux desktop preview and agent imports,"codex-app,codex-cli",codex
+2026-08-13,Computer History,codex-app,codex
+2026-08-17,Public plugin catalog CSV export,general,codex
+2026-08-18,ChatGPT for iOS 1.2026.223,codex-mobile,codex
+2026-08-19,GitLab support in Codex cloud (Beta),general,codex
+2026-08-20,Codex and ChatGPT updates,"general,codex-app",codex
+2026-08-24,Codex MCP server command deprecated,general,codex
+2026-08-25,"Browser extensions, site tools, and cloud sign-in","general,codex-app,codex-mobile",codex
+2026-08-25,"Trigger scheduled tasks from Gmail, Slack, and GitHub events","general,codex-mobile",codex
+2026-08-26,ChatGPT for iOS 1.2026.230,codex-mobile,codex
+2026-08-26,Codex CLI 0.150.0,codex-cli,codex
+2026-08-27,Codex CLI 0.150.1,codex-cli,codex
+2026-08-29,Codex CLI 0.151.0,codex-cli,codex
+2026-09-01,ChatGPT for iOS 1.2026.237,codex-mobile,codex
+2026-09-01,Codex CLI 0.152.0,codex-cli,codex
+2026-09-01,Codex CLI 0.152.1,codex-cli,codex
+2026-09-03,Codex CLI 0.153.0,codex-cli,codex
+2026-09-03,Codex CLI 0.153.1,codex-cli,codex
+2026-09-03,Codex CLI 0.153.2,codex-cli,codex
+2026-09-04,Codex CLI 0.153.3,codex-cli,codex
+2026-09-04,Codex CLI 0.153.4,codex-cli,codex
+2026-09-05,Codex MCP server removed,general,codex
+2026-09-08,ChatGPT for iOS 1.2026.244,codex-mobile,codex
+2026-09-09,Codex CLI 0.154.0,codex-cli,codex
+2026-09-10,Codex CLI Python SDK 0.154.0,codex-cli,codex
+2026-09-10,Codex CLI Cygwin build inputs and matching source for Windows voice,codex-cli,codex
+2026-09-11,Quick chats with Pets and Appshots on Windows 26.908,codex-app,codex
+2026-09-14,GPT-5.3-Codex-Spark deprecated,general,codex
+2026-09-14,"GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14",general,codex
+2026-09-17,Codex CLI 0.155.0,codex-cli,codex
+2026-09-18,ChatGPT for iOS 1.2026.251,codex-mobile,codex
+2026-09-18,Codex CLI 0.155.1,codex-cli,codex

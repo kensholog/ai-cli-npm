@@ -1,0 +1,399 @@
+{
+ "note": "事後の参考表。判定には使わない",
+ "spike_vs_previous_week": {
+  "a_issues": {
+   "previous_week": 795,
+   "spike_week": 654,
+   "ratio": 0.8226415094339623,
+   "week_before_previous": 547,
+   "previous_vs_before": 1.453382084095064
+  },
+  "b_first_time_authors": {
+   "previous_week": 596,
+   "spike_week": 443,
+   "ratio": 0.7432885906040269,
+   "week_before_previous": 377,
+   "previous_vs_before": 1.5809018567639257
+  },
+  "c_releases_per_day": {
+   "previous_week": 65734.89791317334,
+   "spike_week": 71309.10517234993,
+   "ratio": 1.0847982949108605,
+   "week_before_previous": 43537.47799686257,
+   "previous_vs_before": 1.509846250577729
+  },
+  "d_hn": {
+   "previous_week": 38,
+   "spike_week": 37,
+   "ratio": 0.9736842105263158,
+   "week_before_previous": 30,
+   "previous_vs_before": 1.2666666666666666
+  },
+  "npm": {
+   "previous_week": 5964882,
+   "spike_week": 213805049,
+   "ratio": 35.84396958732796,
+   "week_before_previous": 4995502,
+   "previous_vs_before": 1.1940505678908746
+  }
+ },
+ "q2_sensitivity": {
+  "all": {
+   "G": 4.938624317148681,
+   "verdict": "支持"
+  },
+  "without_a_issues": {
+   "G": 3.2759520378630036,
+   "verdict": "支持"
+  },
+  "without_b_authors": {
+   "G": 3.2759520378630036,
+   "verdict": "支持"
+  },
+  "without_c_releases": {
+   "G": 6.60129659643436,
+   "verdict": "保留"
+  },
+  "without_d_hn": {
+   "G": 6.60129659643436,
+   "verdict": "保留"
+  }
+ },
+ "monthly": {
+  "codex": [
+   {
+    "month": "2026-01",
+    "npm_median": 69490,
+    "issues": 617,
+    "authors": 508,
+    "releases_per_day": 24981.686327941963,
+    "hn": 62
+   },
+   {
+    "month": "2026-02",
+    "npm_median": 193120.0,
+    "issues": 1431,
+    "authors": 1059,
+    "releases_per_day": 49243.83296439627,
+    "hn": 182
+   },
+   {
+    "month": "2026-03",
+    "npm_median": 450617,
+    "issues": 1785,
+    "authors": 1409,
+    "releases_per_day": 34737.18049357358,
+    "hn": 139
+   },
+   {
+    "month": "2026-04",
+    "npm_median": 580412.5,
+    "issues": 2352,
+    "authors": 1951,
+    "releases_per_day": 42796.23354233967,
+    "hn": 129
+   },
+   {
+    "month": "2026-05",
+    "npm_median": 1419482,
+    "issues": 3224,
+    "authors": 2615,
+    "releases_per_day": 76278.91199865808,
+    "hn": 153
+   },
+   {
+    "month": "2026-06",
+    "npm_median": 1569705,
+    "issues": 3412,
+    "authors": 2869,
+    "releases_per_day": 182773.3756196165,
+    "hn": 146
+   },
+   {
+    "month": "2026-07",
+    "npm_median": 2129964,
+    "issues": 4403,
+    "authors": 3753,
+    "releases_per_day": 206283.02971242627,
+    "hn": 199
+   },
+   {
+    "month": "2026-08",
+    "npm_median": 2525795.5,
+    "issues": 4073,
+    "authors": 3471,
+    "releases_per_day": 81838.80623527581,
+    "hn": 139
+   }
+  ],
+  "claude": [
+   {
+    "month": "2026-01",
+    "npm_median": 911269,
+    "issues": 6004,
+    "authors": 4602,
+    "releases_per_day": 0.0,
+    "hn": 463
+   },
+   {
+    "month": "2026-02",
+    "npm_median": 1156911.5,
+    "issues": 7078,
+    "authors": 5884,
+    "releases_per_day": 0.0,
+    "hn": 532
+   },
+   {
+    "month": "2026-03",
+    "npm_median": 1593678,
+    "issues": 11359,
+    "authors": 9436,
+    "releases_per_day": 0.0,
+    "hn": 594
+   },
+   {
+    "month": "2026-04",
+    "npm_median": 1860750.5,
+    "issues": 13074,
+    "authors": 10924,
+    "releases_per_day": 563.6648872464286,
+    "hn": 504
+   },
+   {
+    "month": "2026-05",
+    "npm_median": 1111086,
+    "issues": 9025,
+    "authors": 7650,
+    "releases_per_day": 2895.5236674818757,
+    "hn": 305
+   },
+   {
+    "month": "2026-06",
+    "npm_median": 1623575,
+    "issues": 8138,
+    "authors": 6194,
+    "releases_per_day": 3238.4555112847293,
+    "hn": 282
+   },
+   {
+    "month": "2026-07",
+    "npm_median": 1701841.0,
+    "issues": 10253,
+    "authors": 7975,
+    "releases_per_day": 2795.729986974758,
+    "hn": 295
+   },
+   {
+    "month": "2026-08",
+    "npm_median": 2893736.0,
+    "issues": 8019,
+    "authors": 6695,
+    "releases_per_day": 6179.327519812091,
+    "hn": 240
+   }
+  ],
+  "gemini": [
+   {
+    "month": "2026-01",
+    "npm_median": 66025,
+    "issues": 1179,
+    "authors": 622,
+    "releases_per_day": 132.51861233530363,
+    "hn": 17
+   },
+   {
+    "month": "2026-02",
+    "npm_median": 98068.0,
+    "issues": 1175,
+    "authors": 638,
+    "releases_per_day": 251.46896010323903,
+    "hn": 6
+   },
+   {
+    "month": "2026-03",
+    "npm_median": 99676,
+    "issues": 1707,
+    "authors": 902,
+    "releases_per_day": 128.28591814772176,
+    "hn": 15
+   },
+   {
+    "month": "2026-04",
+    "npm_median": 112117.0,
+    "issues": 947,
+    "authors": 673,
+    "releases_per_day": 238.20472321925843,
+    "hn": 8
+   },
+   {
+    "month": "2026-05",
+    "npm_median": 97115,
+    "issues": 661,
+    "authors": 476,
+    "releases_per_day": 131.91811424576093,
+    "hn": 5
+   },
+   {
+    "month": "2026-06",
+    "npm_median": 83175,
+    "issues": 219,
+    "authors": 161,
+    "releases_per_day": 125.36983453717747,
+    "hn": 3
+   },
+   {
+    "month": "2026-07",
+    "npm_median": 69109.5,
+    "issues": 115,
+    "authors": 78,
+    "releases_per_day": 104.79194292813091,
+    "hn": 5
+   },
+   {
+    "month": "2026-08",
+    "npm_median": 59625.5,
+    "issues": 179,
+    "authors": 98,
+    "releases_per_day": 110.63988873614407,
+    "hn": 2
+   }
+  ]
+ },
+ "decomposition_codex": {
+  "npm_ratio": 36.3476111670744,
+  "counting_factor": 2.0605810838656504,
+  "issue_author_ratio": 6.832677165354331,
+  "residual": 2.5816375152076207,
+  "note": "数え方の係数は直近 7 日の s = 0.5147 が 2026-08 にも当てはまると仮定。issue 作成者を「人」の代理に置いた算術で、因果の分解ではない"
+ },
+ "weekly_issues": {
+  "header": [
+   "week",
+   "codex_issues",
+   "codex_authors",
+   "claude_issues",
+   "claude_authors",
+   "gemini_issues",
+   "gemini_authors"
+  ],
+  "rows": [
+   [
+    "2026-03-05",
+    542,
+    435,
+    2293,
+    2017,
+    423,
+    233
+   ],
+   [
+    "2026-03-12",
+    366,
+    324,
+    2518,
+    2233,
+    474,
+    277
+   ],
+   [
+    "2026-03-19",
+    352,
+    315,
+    2920,
+    2579,
+    337,
+    214
+   ],
+   [
+    "2026-03-26",
+    420,
+    366,
+    3113,
+    2742,
+    310,
+    233
+   ],
+   [
+    "2026-04-02",
+    385,
+    337,
+    3083,
+    2767,
+    265,
+    179
+   ],
+   [
+    "2026-04-09",
+    465,
+    411,
+    3261,
+    2854,
+    223,
+    187
+   ],
+   [
+    "2026-04-16",
+    547,
+    479,
+    3289,
+    2917,
+    192,
+    172
+   ],
+   [
+    "2026-04-23",
+    795,
+    723,
+    2585,
+    2257,
+    209,
+    168
+   ],
+   [
+    "2026-04-30",
+    654,
+    568,
+    1957,
+    1762,
+    169,
+    146
+   ],
+   [
+    "2026-05-07",
+    718,
+    645,
+    1984,
+    1789,
+    241,
+    151
+   ],
+   [
+    "2026-05-14",
+    778,
+    671,
+    2117,
+    1866,
+    144,
+    116
+   ],
+   [
+    "2026-05-21",
+    750,
+    659,
+    1879,
+    1656,
+    78,
+    66
+   ],
+   [
+    "2026-05-28",
+    954,
+    821,
+    2236,
+    1974,
+    79,
+    66
+   ]
+  ]
+ }
+}

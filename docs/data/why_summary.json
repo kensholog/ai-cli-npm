@@ -1,0 +1,2414 @@
+{
+ "fetch_date_utc": "2026-09-21",
+ "n_requests": 1521,
+ "npm_known": {
+  "week_ratio": 49.2,
+  "month_ratio_adjusted": 17.64
+ },
+ "D": {
+  "codex": {
+   "issues_first": "2025-04-16",
+   "issues_last": "2026-09-21",
+   "issues_ok": true,
+   "stable_first": "2025-06-30",
+   "stable_last": "2026-09-18",
+   "n_stable": 161,
+   "releases_ok": true,
+   "hn_ok": true
+  },
+  "claude": {
+   "issues_first": "2025-02-24",
+   "issues_last": "2026-09-21",
+   "issues_ok": true,
+   "stable_first": "2025-12-19",
+   "stable_last": "2026-09-19",
+   "n_stable": 224,
+   "releases_ok": true,
+   "hn_ok": true
+  },
+  "gemini": {
+   "issues_first": "2025-04-17",
+   "issues_last": "2026-09-21",
+   "issues_ok": true,
+   "stable_first": "2025-06-28",
+   "stable_last": "2026-09-15",
+   "n_stable": 315,
+   "releases_ok": true,
+   "hn_ok": true
+  }
+ },
+ "Q1": {
+  "codex": {
+   "indicators": {
+    "a_issues": {
+     "spike_week": 654,
+     "base_weeks": [
+      385,
+      465,
+      547,
+      795
+     ],
+     "base_mean": 548.0,
+     "ratio": 1.1934306569343065
+    },
+    "b_authors": {
+     "spike_week": 443,
+     "base_weeks": [
+      263,
+      307,
+      377,
+      596
+     ],
+     "base_mean": 385.75,
+     "ratio": 1.1484121840570318
+    },
+    "c_releases": {
+     "spike_week": 71309.10517234993,
+     "base_weeks": [
+      27531.725913288858,
+      33227.698905994774,
+      43537.47799686257,
+      65734.89791317334
+     ],
+     "base_mean": 42507.950182329885,
+     "ratio": 1.6775474909160024
+    },
+    "d_hn": {
+     "spike_week": 37,
+     "base_weeks": [
+      26,
+      26,
+      30,
+      38
+     ],
+     "base_mean": 30.0,
+     "ratio": 1.2333333333333334
+    }
+   },
+   "n": 4,
+   "k": 1,
+   "verdict": "人の流入とは整合しない（予測を支持）"
+  },
+  "claude": {
+   "indicators": {
+    "a_issues": {
+     "spike_week": 1957,
+     "base_weeks": [
+      3083,
+      3261,
+      3289,
+      2585
+     ],
+     "base_mean": 3054.5,
+     "ratio": 0.6406940579472908
+    },
+    "b_authors": {
+     "spike_week": 1471,
+     "base_weeks": [
+      2293,
+      2336,
+      2418,
+      1850
+     ],
+     "base_mean": 2224.25,
+     "ratio": 0.6613465212993144
+    },
+    "c_releases": {
+     "spike_week": 1488.6423137734091,
+     "base_weeks": [
+      0.0,
+      0.0,
+      0.0,
+      2051.3874811604323
+     ],
+     "base_mean": 512.8468702901081,
+     "ratio": 2.9027033214247977
+    },
+    "d_hn": {
+     "spike_week": 79,
+     "base_weeks": [
+      139,
+      129,
+      99,
+      80
+     ],
+     "base_mean": 111.75,
+     "ratio": 0.7069351230425056
+    }
+   }
+  },
+  "gemini": {
+   "indicators": {
+    "a_issues": {
+     "spike_week": 169,
+     "base_weeks": [
+      265,
+      223,
+      192,
+      209
+     ],
+     "base_mean": 222.25,
+     "ratio": 0.7604049493813273
+    },
+    "b_authors": {
+     "spike_week": 112,
+     "base_weeks": [
+      115,
+      132,
+      133,
+      121
+     ],
+     "base_mean": 125.25,
+     "ratio": 0.8942115768463074
+    },
+    "c_releases": {
+     "spike_week": 217.89792754004404,
+     "base_weeks": [
+      208.43299989873117,
+      292.4789046306884,
+      211.70252411253296,
+      240.29512134513692
+     ],
+     "base_mean": 238.22738749677237,
+     "ratio": 0.914663632211457
+    },
+    "d_hn": {
+     "spike_week": 4,
+     "base_weeks": [
+      1,
+      2,
+      1,
+      0
+     ],
+     "base_mean": 1.0,
+     "ratio": 4.0
+    }
+   }
+  }
+ },
+ "Q2": {
+  "codex": {
+   "indicators": {
+    "a_issues": {
+     "jan": 617,
+     "aug": 4073,
+     "ratio": 6.60129659643436
+    },
+    "b_authors": {
+     "jan": 508,
+     "aug": 3471,
+     "ratio": 6.832677165354331
+    },
+    "c_releases": {
+     "jan": 24981.686327941963,
+     "aug": 81838.80623527581,
+     "ratio": 3.2759520378630036
+    },
+    "d_hn": {
+     "jan": 62,
+     "aug": 139,
+     "ratio": 2.2419354838709675
+    }
+   },
+   "n": 4,
+   "G": 4.938624317148681,
+   "verdict": "支持"
+  },
+  "claude": {
+   "indicators": {
+    "a_issues": {
+     "jan": 6004,
+     "aug": 8019,
+     "ratio": 1.3356095936042638
+    },
+    "b_authors": {
+     "jan": 4602,
+     "aug": 6695,
+     "ratio": 1.4548022598870056
+    },
+    "c_releases": {
+     "jan": 0.0,
+     "aug": 6179.327519812091,
+     "ratio": null
+    },
+    "d_hn": {
+     "jan": 463,
+     "aug": 240,
+     "ratio": 0.5183585313174947
+    }
+   },
+   "n": 3,
+   "G": 1.3356095936042638,
+   "verdict": "支持"
+  },
+  "gemini": {
+   "indicators": {
+    "a_issues": {
+     "jan": 1179,
+     "aug": 179,
+     "ratio": 0.15182357930449533
+    },
+    "b_authors": {
+     "jan": 622,
+     "aug": 98,
+     "ratio": 0.15755627009646303
+    },
+    "c_releases": {
+     "jan": 132.51861233530363,
+     "aug": 110.63988873614407,
+     "ratio": 0.8349007493090769
+    },
+    "d_hn": {
+     "jan": 17,
+     "aug": 2,
+     "ratio": 0.11764705882352941
+    }
+   },
+   "n": 4,
+   "G": 0.15468992470047918,
+   "verdict": "支持"
+  }
+ },
+ "Q3": {
+  "n_changelog_events": 130,
+  "chance_rate": 0.8700564971751412,
+  "steps": {
+   "codex": [
+    {
+     "day": "2025-10-25",
+     "r": 1.5352585735866038,
+     "changelog": [
+      {
+       "date": "2025-10-22",
+       "title": "Tag @Codex on GitHub Issues and PRs",
+       "label": "general"
+      }
+     ],
+     "changelog_after_7d": [
+      {
+       "date": "2025-10-30",
+       "title": "Credits on ChatGPT Pro and Plus",
+       "label": "general"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.48.0",
+       "published": "2025-10-23",
+       "name": "0.48.0"
+      },
+      {
+       "tag": "rust-v0.49.0",
+       "published": "2025-10-24",
+       "name": "0.49.0"
+      },
+      {
+       "tag": "rust-v0.50.0",
+       "published": "2025-10-25",
+       "name": "0.50.0"
+      },
+      {
+       "tag": "rust-v0.52.0",
+       "published": "2025-10-30",
+       "name": "0.52.0"
+      },
+      {
+       "tag": "rust-v0.53.0",
+       "published": "2025-10-31",
+       "name": "0.53.0"
+      }
+     ]
+    },
+    {
+     "day": "2025-11-29",
+     "r": 1.5149848858483812,
+     "changelog": [
+      {
+       "date": "2025-11-24",
+       "title": "Usage and credits fixes",
+       "label": "general"
+      }
+     ],
+     "changelog_after_7d": [
+      {
+       "date": "2025-12-04",
+       "title": "Introducing Codex for Linear",
+       "label": "general"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.64.0",
+       "published": "2025-12-02",
+       "name": "0.64.0"
+      },
+      {
+       "tag": "rust-v0.65.0",
+       "published": "2025-12-04",
+       "name": "0.65.0"
+      }
+     ]
+    },
+    {
+     "day": "2026-01-07",
+     "r": 1.6126275127929048,
+     "changelog": [],
+     "changelog_after_7d": [
+      {
+       "date": "2026-01-14",
+       "title": "GPT-5.2-Codex API availability",
+       "label": "general"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.78.0",
+       "published": "2026-01-06",
+       "name": "0.78.0"
+      },
+      {
+       "tag": "rust-v0.79.0",
+       "published": "2026-01-07",
+       "name": "0.79.0"
+      },
+      {
+       "tag": "rust-v0.80.0",
+       "published": "2026-01-09",
+       "name": "0.80.0"
+      },
+      {
+       "tag": "rust-v0.81.0",
+       "published": "2026-01-14",
+       "name": "0.81.0"
+      }
+     ]
+    },
+    {
+     "day": "2026-02-12",
+     "r": 2.3748769636599865,
+     "changelog": [
+      {
+       "date": "2026-02-05",
+       "title": "Introducing GPT-5.3-Codex",
+       "label": "general"
+      },
+      {
+       "date": "2026-02-05",
+       "title": "Codex app 26.205",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-02-06",
+       "title": "Codex app 26.206",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-02-08",
+       "title": "Codex app 26.208",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-02-09",
+       "title": "GPT-5.3-Codex in Cursor and VS Code",
+       "label": "general"
+      },
+      {
+       "date": "2026-02-10",
+       "title": "Codex app 26.210",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-02-12",
+       "title": "Introducing GPT-5.3-Codex-Spark",
+       "label": "general"
+      },
+      {
+       "date": "2026-02-12",
+       "title": "Codex app 26.212",
+       "label": "codex-app"
+      }
+     ],
+     "changelog_after_7d": [
+      {
+       "date": "2026-02-17",
+       "title": "Codex app 26.217",
+       "label": "codex-app"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.97.0",
+       "published": "2026-02-05",
+       "name": "0.97.0"
+      },
+      {
+       "tag": "rust-v0.98.0",
+       "published": "2026-02-05",
+       "name": "0.98.0"
+      },
+      {
+       "tag": "rust-v0.99.0",
+       "published": "2026-02-11",
+       "name": "0.99.0"
+      },
+      {
+       "tag": "rust-v0.100.0",
+       "published": "2026-02-12",
+       "name": "0.100.0"
+      },
+      {
+       "tag": "rust-v0.101.0",
+       "published": "2026-02-12",
+       "name": "0.101.0"
+      },
+      {
+       "tag": "rust-v0.102.0",
+       "published": "2026-02-17",
+       "name": "0.102.0"
+      },
+      {
+       "tag": "rust-v0.103.0",
+       "published": "2026-02-17",
+       "name": "0.103.0"
+      },
+      {
+       "tag": "rust-v0.104.0",
+       "published": "2026-02-18",
+       "name": "0.104.0"
+      }
+     ]
+    },
+    {
+     "day": "2026-04-17",
+     "r": 1.963981046819366,
+     "changelog": [
+      {
+       "date": "2026-04-10",
+       "title": "Codex app 26.409",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-04-12",
+       "title": "Codex app 26.410",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-04-16",
+       "title": "Codex can now help with more of your work 26.415",
+       "label": "codex-app"
+      }
+     ],
+     "changelog_after_7d": [
+      {
+       "date": "2026-04-20",
+       "title": "Codex app 26.417",
+       "label": "codex-app"
+      },
+      {
+       "date": "2026-04-23",
+       "title": "GPT-5.5 and Codex app updates",
+       "label": "general"
+      },
+      {
+       "date": "2026-04-24",
+       "title": "Codex app 26.423",
+       "label": "codex-app"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.119.0",
+       "published": "2026-04-10",
+       "name": "0.119.0"
+      },
+      {
+       "tag": "rust-v0.120.0",
+       "published": "2026-04-11",
+       "name": "0.120.0"
+      },
+      {
+       "tag": "rust-v0.121.0",
+       "published": "2026-04-15",
+       "name": "0.121.0"
+      },
+      {
+       "tag": "rust-v0.122.0",
+       "published": "2026-04-20",
+       "name": "0.122.0"
+      },
+      {
+       "tag": "rust-v0.123.0",
+       "published": "2026-04-23",
+       "name": "0.123.0"
+      },
+      {
+       "tag": "rust-v0.124.0",
+       "published": "2026-04-23",
+       "name": "0.124.0"
+      },
+      {
+       "tag": "rust-v0.125.0",
+       "published": "2026-04-24",
+       "name": "0.125.0"
+      }
+     ]
+    },
+    {
+     "day": "2026-05-21",
+     "r": 1.712575780007996,
+     "changelog": [
+      {
+       "date": "2026-05-14",
+       "title": "Work with Codex from anywhere",
+       "label": "general,codex-mobile"
+      },
+      {
+       "date": "2026-05-18",
+       "title": "ChatGPT for iOS 1.2026.132",
+       "label": "codex-mobile"
+      },
+      {
+       "date": "2026-05-21",
+       "title": "Appshots, goal mode, and more 26.519",
+       "label": "codex-app"
+      }
+     ],
+     "changelog_after_7d": [
+      {
+       "date": "2026-05-25",
+       "title": "ChatGPT for iOS 1.2026.139",
+       "label": "codex-mobile"
+      },
+      {
+       "date": "2026-05-26",
+       "title": "GPT-5.3-Codex and GPT-5.2 deprecated",
+       "label": "general"
+      }
+     ],
+     "stable_releases": [
+      {
+       "tag": "rust-v0.131.0",
+       "published": "2026-05-18",
+       "name": "0.131.0"
+      },
+      {
+       "tag": "rust-v0.132.0",
+       "published": "2026-05-20",
+       "name": "0.132.0"
+      },
+      {
+       "tag": "rust-v0.133.0",
+       "published": "2026-05-21",
+       "name": "0.133.0"
+      },
+      {
+       "tag": "rust-v0.134.0",
+       "published": "2026-05-26",
+       "name": "0.134.0"
+      },
+      {
+       "tag": "rust-v0.135.0",
+       "published": "2026-05-28",
+       "name": "0.135.0"
+      }
+     ]
+    }
+   ],
+   "claude": [
+    {
+     "day": "2026-01-07",
+     "r": 3.9625937564699396,
+     "changelog": [],
+     "changelog_after_7d": [],
+     "stable_releases": [
+      {
+       "tag": "v2.0.76",
+       "published": "2026-01-07",
+       "name": "v2.0.76"
+      },
+      {
+       "tag": "v2.1.1",
+       "published": "2026-01-07",
+       "name": "v2.1.1"
+      },
+      {
+       "tag": "v2.1.2",
+       "published": "2026-01-09",
+       "name": "v2.1.2"
+      },
+      {
+       "tag": "v2.1.3",
+       "published": "2026-01-09",
+       "name": "v2.1.3"
+      },
+      {
+       "tag": "v2.1.4",
+       "published": "2026-01-11",
+       "name": "v2.1.4"
+      },
+      {
+       "tag": "v2.1.5",
+       "published": "2026-01-12",
+       "name": "v2.1.5"
+      },
+      {
+       "tag": "v2.1.6",
+       "published": "2026-01-13",
+       "name": "v2.1.6"
+      },
+      {
+       "tag": "v2.1.7",
+       "published": "2026-01-14",
+       "name": "v2.1.7"
+      }
+     ]
+    },
+    {
+     "day": "2026-08-07",
+     "r": 2.128344113379224,
+     "changelog": [],
+     "changelog_after_7d": [],
+     "stable_releases": [
+      {
+       "tag": "v2.1.221",
+       "published": "2026-08-04",
+       "name": "v2.1.221"
+      },
+      {
+       "tag": "v2.1.222",
+       "published": "2026-08-04",
+       "name": "v2.1.222"
+      },
+      {
+       "tag": "v2.1.223",
+       "published": "2026-08-06",
+       "name": "v2.1.223"
+      },
+      {
+       "tag": "v2.1.224",
+       "published": "2026-08-07",
+       "name": "v2.1.224"
+      },
+      {
+       "tag": "v2.1.225",
+       "published": "2026-08-08",
+       "name": "v2.1.225"
+      },
+      {
+       "tag": "v2.1.226",
+       "published": "2026-08-08",
+       "name": "v2.1.226"
+      },
+      {
+       "tag": "v2.1.227",
+       "published": "2026-08-10",
+       "name": "v2.1.227"
+      },
+      {
+       "tag": "v2.1.228",
+       "published": "2026-08-11",
+       "name": "v2.1.228"
+      },
+      {
+       "tag": "v2.1.229",
+       "published": "2026-08-12",
+       "name": "v2.1.229"
+      },
+      {
+       "tag": "v2.1.231",
+       "published": "2026-08-13",
+       "name": "v2.1.231"
+      },
+      {
+       "tag": "v2.1.232",
+       "published": "2026-08-13",
+       "name": "v2.1.232"
+      },
+      {
+       "tag": "v2.1.233",
+       "published": "2026-08-14",
+       "name": "v2.1.233"
+      }
+     ]
+    }
+   ],
+   "gemini": [
+    {
+     "day": "2025-11-14",
+     "r": 1.5231572234949575,
+     "changelog": [],
+     "changelog_after_7d": [],
+     "stable_releases": [
+      {
+       "tag": "v0.13.0-preview.3",
+       "published": "2025-11-07",
+       "name": "Release v0.13.0-preview.3"
+      },
+      {
+       "tag": "v0.14.0-preview.0",
+       "published": "2025-11-07",
+       "name": "Release v0.14.0-preview.0"
+      },
+      {
+       "tag": "v0.13.0",
+       "published": "2025-11-07",
+       "name": "Release v0.13.0"
+      },
+      {
+       "tag": "v0.15.0-nightly.20251107.cd27cae8",
+       "published": "2025-11-07",
+       "name": "Release v0.15.0-nightly.20251107.cd27cae8"
+      },
+      {
+       "tag": "v0.15.0-nightly.20251110.c0b766ad",
+       "published": "2025-11-10",
+       "name": "Release v0.15.0-nightly.20251110.c0b766ad"
+      },
+      {
+       "tag": "v0.15.0-nightly.20251111.51f952e7",
+       "published": "2025-11-11",
+       "name": "Release v0.15.0-nightly.20251111.51f952e7"
+      },
+      {
+       "tag": "v0.15.0-preview.0",
+       "published": "2025-11-12",
+       "name": "Release v0.15.0-preview.0"
+      },
+      {
+       "tag": "v0.14.0",
+       "published": "2025-11-12",
+       "name": "Release v0.14.0"
+      },
+      {
+       "tag": "v0.16.0-nightly.20251112.c961f274",
+       "published": "2025-11-12",
+       "name": "Release v0.16.0-nightly.20251112.c961f274"
+      },
+      {
+       "tag": "v0.15.0-preview.1",
+       "published": "2025-11-12",
+       "name": "Release v0.15.0-preview.1"
+      },
+      {
+       "tag": "v0.15.0-preview.2",
+       "published": "2025-11-12",
+       "name": "Release v0.15.0-preview.2"
+      },
+      {
+       "tag": "v0.16.0-nightly.20251113.ad1f0d99",
+       "published": "2025-11-13",
+       "name": "Release v0.16.0-nightly.20251113.ad1f0d99"
+      },
+      {
+       "tag": "v0.15.0-preview.3",
+       "published": "2025-11-13",
+       "name": "Release v0.15.0-preview.3"
+      },
+      {
+       "tag": "v0.15.0-preview.4",
+       "published": "2025-11-13",
+       "name": "Release v0.15.0-preview.4"
+      },
+      {
+       "tag": "v0.15.0-preview.5",
+       "published": "2025-11-13",
+       "name": "Release v0.15.0-preview.5"
+      },
+      {
+       "tag": "v0.15.0-preview.6",
+       "published": "2025-11-13",
+       "name": "Release v0.15.0-preview.6"
+      },
+      {
+       "tag": "v0.15.0-preview.7",
+       "published": "2025-11-13",
+       "name": "Release v0.15.0-preview.7"
+      },
+      {
+       "tag": "v0.16.0-preview.0",
+       "published": "2025-11-14",
+       "name": "Release v0.16.0-preview.0"
+      },
+      {
+       "tag": "v0.15.0",
+       "published": "2025-11-14",
+       "name": "Release v0.15.0"
+      },
+      {
+       "tag": "v0.17.0-nightly.20251114.0fcbff506",
+       "published": "2025-11-14",
+       "name": "Release v0.17.0-nightly.20251114.0fcbff506"
+      },
+      {
+       "tag": "v0.16.0-preview.1",
+       "published": "2025-11-14",
+       "name": "Release v0.16.0-preview.1"
+      },
+      {
+       "tag": "v0.15.1",
+       "published": "2025-11-14",
+       "name": "Release v0.15.1"
+      },
+      {
+       "tag": "v0.16.0-preview.2",
+       "published": "2025-11-14",
+       "name": "Release v0.16.0-preview.2"
+      },
+      {
+       "tag": "v0.16.0-preview.3",
+       "published": "2025-11-15",
+       "name": "Release v0.16.0-preview.3"
+      },
+      {
+       "tag": "v0.15.2",
+       "published": "2025-11-15",
+       "name": "Release v0.15.2"
+      },
+      {
+       "tag": "v0.16.0-preview.4",
+       "published": "2025-11-15",
+       "name": "Release v0.16.0-preview.4"
+      },
+      {
+       "tag": "v0.15.3",
+       "published": "2025-11-15",
+       "name": "Release v0.15.3"
+      },
+      {
+       "tag": "v0.17.0-nightly.20251116.e650a4ee5",
+       "published": "2025-11-16",
+       "name": "Release v0.17.0-nightly.20251116.e650a4ee5"
+      },
+      {
+       "tag": "v0.17.0-nightly.20251117.cf8de02c6",
+       "published": "2025-11-17",
+       "name": "Release v0.17.0-nightly.20251117.cf8de02c6"
+      },
+      {
+       "tag": "v0.16.0-preview.5",
+       "published": "2025-11-17",
+       "name": "Release v0.16.0-preview.5"
+      },
+      {
+       "tag": "v0.15.4",
+       "published": "2025-11-17",
+       "name": "Release v0.15.4"
+      },
+      {
+       "tag": "v0.16.0",
+       "published": "2025-11-18",
+       "name": "Release v0.16.0"
+      },
+      {
+       "tag": "v0.18.0-nightly.20251118.7cc5234b9",
+       "published": "2025-11-18",
+       "name": "Release v0.18.0-nightly.20251118.7cc5234b9"
+      },
+      {
+       "tag": "v0.18.0-nightly.20251120.2231497b1",
+       "published": "2025-11-20",
+       "name": "Release v0.18.0-nightly.20251120.2231497b1"
+      },
+      {
+       "tag": "v0.17.0-preview.1",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0-preview.1"
+      },
+      {
+       "tag": "v0.17.0-preview.2",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0-preview.2"
+      },
+      {
+       "tag": "v0.17.0-preview.3",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0-preview.3"
+      },
+      {
+       "tag": "v0.17.0-preview.4",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0-preview.4"
+      },
+      {
+       "tag": "v0.17.0-preview.5",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0-preview.5"
+      },
+      {
+       "tag": "v0.18.0-preview.0",
+       "published": "2025-11-20",
+       "name": "Release v0.18.0-preview.0"
+      },
+      {
+       "tag": "v0.17.0",
+       "published": "2025-11-20",
+       "name": "Release v0.17.0"
+      },
+      {
+       "tag": "v0.19.0-nightly.20251121.5982abeff",
+       "published": "2025-11-21",
+       "name": "Release v0.19.0-nightly.20251121.5982abeff"
+      }
+     ]
+    },
+    {
+     "day": "2026-01-13",
+     "r": 1.9507089042383823,
+     "changelog": [],
+     "changelog_after_7d": [],
+     "stable_releases": [
+      {
+       "tag": "v0.23.0",
+       "published": "2026-01-07",
+       "name": "Release v0.23.0"
+      },
+      {
+       "tag": "v0.24.0",
+       "published": "2026-01-14",
+       "name": "Release v0.24.0"
+      },
+      {
+       "tag": "v0.24.4",
+       "published": "2026-01-19",
+       "name": "Release v0.24.4"
+      },
+      {
+       "tag": "v0.24.5",
+       "published": "2026-01-20",
+       "name": "Release v0.24.5"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "Q4": {
+  "2025-09": {
+   "n_articles": 72,
+   "share_title_claude": 0.19444444444444445,
+   "top10_categories": {
+    "使い方・設定": 3,
+    "その他": 3,
+    "乗り換え・比較": 4
+   },
+   "top10": [
+    {
+     "title": "Codex CLIを使いこなすための機能・設定まとめ",
+     "liked_count": 780,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "Codexを使うあなたへ。おすすめ設定&MCP集",
+     "liked_count": 333,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "Codex CLI を初めて使う人向けの実践ガイド",
+     "liked_count": 291,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "[2025年9月5日] Codexしか勝たん気がしてきた（手のひら返し） (週刊AI)",
+     "liked_count": 148,
+     "category": "その他"
+    },
+    {
+     "title": "Claude CodeからCodexをMCPで呼び出せるようになった話｜Claude Code性能低下問題もこれで解決！",
+     "liked_count": 148,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Codex CLIにClaude Codeから手軽に設定を移行する方法",
+     "liked_count": 144,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude Code vs Codex vs Cursor ― 同じプロンプトでSlackクローンを生成したら",
+     "liked_count": 120,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude CodeとCodex MCPの組み合わせが体験良すぎる",
+     "liked_count": 115,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Kiro×CodeXで最高のSpec駆動開発を！数時間でWeb3ネイティブなアプリを開発してハッカソンで入賞した話",
+     "liked_count": 113,
+     "category": "その他"
+    },
+    {
+     "title": "コーディングエージェントのauto-compactの仕組みを読み解く - タスク引継ぎの再現性を高める方法",
+     "liked_count": 108,
+     "category": "その他"
+    }
+   ]
+  },
+  "2025-10": {
+   "n_articles": 74,
+   "share_title_claude": 0.10810810810810811,
+   "top10_categories": {
+    "その他": 7,
+    "乗り換え・比較": 3
+   },
+   "top10": [
+    {
+     "title": "2025/10/20時点で最良のAIコーディングプロセス",
+     "liked_count": 538,
+     "category": "その他"
+    },
+    {
+     "title": "我々はCodexとどう向き合うべきなのか",
+     "liked_count": 358,
+     "category": "その他"
+    },
+    {
+     "title": "今こそCodexに全振りするチャンス！ClaudeCodeからCodexへの移行と実践Tips9選",
+     "liked_count": 273,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Codex を完全に理解する会",
+     "liked_count": 256,
+     "category": "その他"
+    },
+    {
+     "title": "スマホでバイブコーディングする技術",
+     "liked_count": 186,
+     "category": "その他"
+    },
+    {
+     "title": "知ってるかい？Codexならスマホでタスク完結できる世界線を。",
+     "liked_count": 107,
+     "category": "その他"
+    },
+    {
+     "title": "iPhoneだけでiOSアプリ開発するワークフロー",
+     "liked_count": 93,
+     "category": "その他"
+    },
+    {
+     "title": "CodeXとClaude Code、「今のところ」どっちがストレスなくタスクを頼める？",
+     "liked_count": 80,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "ここが変だよLLMコーディングエージェント(Codex)",
+     "liked_count": 75,
+     "category": "その他"
+    },
+    {
+     "title": "Claude・Codex・Kombaiを使ったFigma to Codeの比較",
+     "liked_count": 70,
+     "category": "乗り換え・比較"
+    }
+   ]
+  },
+  "2025-11": {
+   "n_articles": 38,
+   "share_title_claude": 0.13157894736842105,
+   "top10_categories": {
+    "その他": 5,
+    "新モデル": 1,
+    "乗り換え・比較": 3,
+    "使い方・設定": 1
+   },
+   "top10": [
+    {
+     "title": "AIを賢く動かすのは「指示力」ではなく「文脈設計力」",
+     "liked_count": 115,
+     "category": "その他"
+    },
+    {
+     "title": "仕様書駆動開発で一番いいAIモデル&エージェント検証 11/23版",
+     "liked_count": 84,
+     "category": "新モデル"
+    },
+    {
+     "title": "AIコードレビュー「棚卸し」のススメ",
+     "liked_count": 69,
+     "category": "その他"
+    },
+    {
+     "title": "Codex CLIに静的型付き関数型言語TreePを作らせてみた",
+     "liked_count": 45,
+     "category": "その他"
+    },
+    {
+     "title": "Claude Code と Codex の使い分け",
+     "liked_count": 41,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude Code on the Web を超える!? Codex Cloud の実践テク5選",
+     "liked_count": 38,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "社内でAIハッカソン(AI開発合宿)を開催した話",
+     "liked_count": 27,
+     "category": "その他"
+    },
+    {
+     "title": "GitHub社謹製Spec KitにCodex CLI対応のPRを送った話",
+     "liked_count": 23,
+     "category": "その他"
+    },
+    {
+     "title": "【PMBOK準拠】実務で使える！Cursor or CodexではじめるAI駆動PM（プロジェクトマネージメント）スターターKitも無料公開",
+     "liked_count": 13,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Codex Cloud環境にMySQL導入→APIの結合テストが実行可能に",
+     "liked_count": 12,
+     "category": "使い方・設定"
+    }
+   ]
+  },
+  "2025-12": {
+   "n_articles": 70,
+   "share_title_claude": 0.18571428571428572,
+   "top10_categories": {
+    "その他": 8,
+    "乗り換え・比較": 2
+   },
+   "top10": [
+    {
+     "title": "実践フルAIコーディング",
+     "liked_count": 631,
+     "category": "その他"
+    },
+    {
+     "title": "Agent Skillsを一番かんたんに作る方法（Claude Code + skill-creator）",
+     "liked_count": 304,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "CodexについにSkillsが来たので徹底解説",
+     "liked_count": 228,
+     "category": "その他"
+    },
+    {
+     "title": "やはりお前らのSkillsの解釈はまちがっている。",
+     "liked_count": 221,
+     "category": "その他"
+    },
+    {
+     "title": "Agent Skillsの運用を楽にし、Claude以外のAgentでも利用可能にするOSS『SkillPort』を作った話",
+     "liked_count": 119,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "年の瀬に開発環境見直してたらVibe Codingに`Conductor`というツールが最高だった",
+     "liked_count": 95,
+     "category": "その他"
+    },
+    {
+     "title": "Flutter未経験から6ヶ月で戦力化し、日商250万円、アクティブユーザー4500人に成長させるまでにやったこと",
+     "liked_count": 73,
+     "category": "その他"
+    },
+    {
+     "title": "AI設計壁打ちに使える、小さな合意を積み重ねるプロトコルを作った",
+     "liked_count": 64,
+     "category": "その他"
+    },
+    {
+     "title": "「Codexでサブエージェント」を独自実装した話",
+     "liked_count": 44,
+     "category": "その他"
+    },
+    {
+     "title": "AI に設計・開発を分業させている話",
+     "liked_count": 41,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-01": {
+   "n_articles": 71,
+   "share_title_claude": 0.28169014084507044,
+   "top10_categories": {
+    "乗り換え・比較": 6,
+    "その他": 3,
+    "使い方・設定": 1
+   },
+   "top10": [
+    {
+     "title": "Claude CodeとCodexの連携をMCPからSkillに変えたら体験が劇的に改善した",
+     "liked_count": 547,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude Code Orchestra: Claude Code × Codex CLI × Gemini CLIの最適解を探る",
+     "liked_count": 396,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "あなたの拾ってきた野良（マーケット）Skills、セキュリティトラブルを発生させていませんか？",
+     "liked_count": 197,
+     "category": "その他"
+    },
+    {
+     "title": "Coding Agentについてのまとめ (2026年1月)",
+     "liked_count": 193,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "実装はClaude、レビューはCodex ─ tmuxで繋ぐ開発フロー",
+     "liked_count": 176,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "GitHub Copilot CLIは、gpt-5.2-codex xhighに複雑なレビューを依頼しても1回4円",
+     "liked_count": 147,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "opencodeを使ってみよう（Anthropic と OpenAI、GitHub Copilotのサブスク対応）",
+     "liked_count": 131,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "複数のコーディングエージェントでSkillsを共有する（Claude Code / Codex対応）",
+     "liked_count": 104,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "TUIでPR diffを見ながら裏でAIが勝手に修正&レビューをし続けるRust製tool「octorus」",
+     "liked_count": 80,
+     "category": "その他"
+    },
+    {
+     "title": "「横のガードレール」でAIにアーキテクチャを教えるのをやめた話",
+     "liked_count": 79,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-02": {
+   "n_articles": 115,
+   "share_title_claude": 0.23478260869565218,
+   "top10_categories": {
+    "乗り換え・比較": 3,
+    "その他": 6,
+    "使い方・設定": 1
+   },
+   "top10": [
+    {
+     "title": "Claude Code や Codex をオーケストレーションして自動でレビュー FB ループを回して洗い物をしてる話",
+     "liked_count": 239,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "AIコーディングのベストプラクティスを読み漁って分かった、本当に重要な4つの原則",
+     "liked_count": 220,
+     "category": "その他"
+    },
+    {
+     "title": "AIエージェント × knipで無駄コードを簡単に掃除",
+     "liked_count": 197,
+     "category": "その他"
+    },
+    {
+     "title": "技術負債も理解負債も生まないAIコーディング手法（2026年2月現在）",
+     "liked_count": 164,
+     "category": "その他"
+    },
+    {
+     "title": "Claude Code / Codex / Gemini CLI — Skills 機能比較まとめ",
+     "liked_count": 130,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "AIに設計を書かせるだけで、理解負債と実装漏れが激減した話",
+     "liked_count": 109,
+     "category": "その他"
+    },
+    {
+     "title": "Codex Appのいい感じの使い方",
+     "liked_count": 85,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "CLAUDE.md と AGENTS.md の二重管理、シンボリックリンクで終わらせよう",
+     "liked_count": 81,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Codex 5.3 と Opus 4.6 どう使い分ける？実務で使って分かったこと",
+     "liked_count": 59,
+     "category": "その他"
+    },
+    {
+     "title": "Codex Skillsを触って分かった、エンジニアと非エンジニアの認識ギャップ",
+     "liked_count": 54,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-03": {
+   "n_articles": 146,
+   "share_title_claude": 0.21232876712328766,
+   "top10_categories": {
+    "その他": 7,
+    "乗り換え・比較": 3
+   },
+   "top10": [
+    {
+     "title": "ハーネスエンジニアリングで人間のコードレビューをやめる",
+     "liked_count": 465,
+     "category": "その他"
+    },
+    {
+     "title": "Claude Code / CodexでKaggle金メダルを取った話",
+     "liked_count": 356,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "ハーネスエンジニアリング整理",
+     "liked_count": 136,
+     "category": "その他"
+    },
+    {
+     "title": "メガネだけでClaude Code / Codex CLIとやり取りできるようにした話",
+     "liked_count": 124,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Symphony - OpenAIが発表したチケット駆動AI開発ツールについて",
+     "liked_count": 114,
+     "category": "その他"
+    },
+    {
+     "title": "macのClaude Code / Codexをスマホから操作できるアプリ「CC Pocket」を作った",
+     "liked_count": 95,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "CodexのBestPracticeを学ぶ会",
+     "liked_count": 94,
+     "category": "その他"
+    },
+    {
+     "title": "夜中もOpenClawに働かせ続けよう🌜🦞",
+     "liked_count": 89,
+     "category": "その他"
+    },
+    {
+     "title": "仕様駆動開発(SDD)から、意図駆動開発(IDD)へ",
+     "liked_count": 86,
+     "category": "その他"
+    },
+    {
+     "title": "完全自律のコーディングパイプラインを作った",
+     "liked_count": 81,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-04": {
+   "n_articles": 131,
+   "share_title_claude": 0.2824427480916031,
+   "top10_categories": {
+    "その他": 6,
+    "使い方・設定": 2,
+    "乗り換え・比較": 2
+   },
+   "top10": [
+    {
+     "title": "grill-me スキルがめちゃ良いので布教したい",
+     "liked_count": 601,
+     "category": "その他"
+    },
+    {
+     "title": "97%のPermission確認を自動化するCoding Agent用OSS「ccgate」が誕生した",
+     "liked_count": 83,
+     "category": "その他"
+    },
+    {
+     "title": "手元のGPUを遊ばせないためのジョブスケジューラ入門",
+     "liked_count": 51,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "Claude Codeと作ったAIオーケストレータを、私はなぜ使わなくなったのか",
+     "liked_count": 49,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Vibe coding に .env は使わない",
+     "liked_count": 43,
+     "category": "その他"
+    },
+    {
+     "title": "Skillの管理に困っているので APM: Agent Package Managerとgh skillを使うんだ",
+     "liked_count": 38,
+     "category": "その他"
+    },
+    {
+     "title": "AI エージェント並列化で自分の脳が限界になったので Maestri を試した",
+     "liked_count": 38,
+     "category": "その他"
+    },
+    {
+     "title": "Claude Code の設定を Codex にどう対応づけるか",
+     "liked_count": 28,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "1人開発×AI全振り — 2ヶ月で68ページの業務システムを作って、AIに経営分析までさせた話",
+     "liked_count": 26,
+     "category": "その他"
+    },
+    {
+     "title": "AGENTS.mdをベストプラクティスに沿って自動更新する自作スキルとhook設定がいい感じ",
+     "liked_count": 24,
+     "category": "使い方・設定"
+    }
+   ]
+  },
+  "2026-05": {
+   "n_articles": 289,
+   "share_title_claude": 0.21453287197231835,
+   "top10_categories": {
+    "乗り換え・比較": 5,
+    "その他": 4,
+    "使い方・設定": 1
+   },
+   "top10": [
+    {
+     "title": "Claude Code派だった僕がCodexに移る前に知りたかったこと",
+     "liked_count": 195,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "CodexをローカルLLMで駆動する",
+     "liked_count": 192,
+     "category": "その他"
+    },
+    {
+     "title": "なぜ、Claude CodeのせいでIT業界はアニメ業界みたいになったのか？",
+     "liked_count": 171,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "たった数行でコード品質がグッと上がる、CLAUDE.md / AGENTS.md にいつも追記してるやつ",
+     "liked_count": 122,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude CodeユーザーのためのCodex入門",
+     "liked_count": 121,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "移動中でも就寝前でも、Codexと育てる「技術ノート」",
+     "liked_count": 121,
+     "category": "その他"
+    },
+    {
+     "title": "楽しかったコーディングエージェントサブスク時代の終わり",
+     "liked_count": 120,
+     "category": "その他"
+    },
+    {
+     "title": "Claude CodeとCodexを2ヶ月使い比べて分かった選び方 — settings.jsonを育てた側が速い",
+     "liked_count": 88,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Codexを使い始めて長時間稼働させるまで",
+     "liked_count": 74,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "コーディングエージェント時代にエンジニアは必要なのか本気で考えてみる",
+     "liked_count": 72,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-06": {
+   "n_articles": 261,
+   "share_title_claude": 0.20689655172413793,
+   "top10_categories": {
+    "その他": 4,
+    "乗り換え・比較": 3,
+    "使い方・設定": 3
+   },
+   "top10": [
+    {
+     "title": "個人のプロンプト術をやめて、チームで回るAI駆動開発ループを作った話",
+     "liked_count": 286,
+     "category": "その他"
+    },
+    {
+     "title": "2026年6月現在の Claude Code 開発フロー",
+     "liked_count": 216,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "「Herdr」を使い始めたら、もう他のターミナルには戻れなくなった",
+     "liked_count": 198,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "使い方は覚えなくていいから tmux を入れろ",
+     "liked_count": 192,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "「Claude Code」を支える技術",
+     "liked_count": 180,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "会社員のためのCodex資料作成術：Skillで統一感のあるプレゼン資料を作る実践ガイド",
+     "liked_count": 146,
+     "category": "使い方・設定"
+    },
+    {
+     "title": "Claude Code と Codex を使い比べて見えた設計思想の違い",
+     "liked_count": 143,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "僕が AI にコーディングをさせなくなった理由（2026 年 5月版）",
+     "liked_count": 133,
+     "category": "その他"
+    },
+    {
+     "title": "AI時代のコードレビューは人に向けるな、仕組みに向けろ",
+     "liked_count": 83,
+     "category": "その他"
+    },
+    {
+     "title": "AIに8割書かせたコードを、半年後の自分が保守できるようにするために実際にやっていること",
+     "liked_count": 61,
+     "category": "その他"
+    }
+   ]
+  },
+  "2026-07": {
+   "n_articles": 245,
+   "share_title_claude": 0.2,
+   "top10_categories": {
+    "その他": 3,
+    "乗り換え・比較": 5,
+    "新モデル": 2
+   },
+   "top10": [
+    {
+     "title": "AIに「レビューして」はもう古い？「敵対的検証」のすすめ",
+     "liked_count": 581,
+     "category": "その他"
+    },
+    {
+     "title": "最近の開発の流れ",
+     "liked_count": 164,
+     "category": "その他"
+    },
+    {
+     "title": "VS Code DevContainer を使わなくなった私の、LLM エージェント向け開発環境",
+     "liked_count": 90,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "【決着】Claude CodeとCodexの設定ファイルを同期させる (みんな仲良く)",
+     "liked_count": 81,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "AI-DLC Workflows 2.0 とは何か、そしてどう実装されているか",
+     "liked_count": 74,
+     "category": "その他"
+    },
+    {
+     "title": "役割ごとにFableとGPT-5.6を使い分けるAgent Teamの設計",
+     "liked_count": 67,
+     "category": "新モデル"
+    },
+    {
+     "title": "開発しているだけで進捗が更新される。Linear × Claude Code × GitHubで作る開発フロー",
+     "liked_count": 62,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "Claude codeと論文書いたら良い論文“は”できた",
+     "liked_count": 62,
+     "category": "乗り換え・比較"
+    },
+    {
+     "title": "GPT-5.6とBlender MCPで、多少マシな3Dモデリングをさせるまで",
+     "liked_count": 51,
+     "category": "新モデル"
+    },
+    {
+     "title": "ループエンジニアリングをGitHub Copilotで組めるか調べてみた",
+     "liked_count": 48,
+     "category": "乗り換え・比較"
+    }
+   ]
+  },
+  "2026-08": {
+   "n_articles": 238,
+   "share_title_claude": 0.19747899159663865,
+   "top10_categories": {
+    "その他": 10
+   },
+   "top10": [
+    {
+     "title": "AIに丸投げしないで理解するためのAI開発手法（2026年8月現在）",
+     "liked_count": 774,
+     "category": "その他"
+    },
+    {
+     "title": "Codexを効率よく使う方法（ChatGPT + GitHub）",
+     "liked_count": 236,
+     "category": "その他"
+    },
+    {
+     "title": "ローカルLLM編成が単独のフロンティアAIを超えた日",
+     "liked_count": 127,
+     "category": "その他"
+    },
+    {
+     "title": "AIエージェントはなぜテストを握り潰すのか ― 報酬エンジニアリングのすすめ",
+     "liked_count": 88,
+     "category": "その他"
+    },
+    {
+     "title": "AI Agentに社内知識をオンボーディングする：SkillsとEvalの設計",
+     "liked_count": 63,
+     "category": "その他"
+    },
+    {
+     "title": "BM25を使用してCodexのトークンの消費を30%抑える",
+     "liked_count": 58,
+     "category": "その他"
+    },
+    {
+     "title": "「Enterで送信」は滅びよ ~ IME誤爆に疲れたので、チャットの送信に修飾キーを必須にした ~",
+     "liked_count": 58,
+     "category": "その他"
+    },
+    {
+     "title": "Next.js + Cloudflareで「サボる」ためのWebツール集を個人開発した",
+     "liked_count": 38,
+     "category": "その他"
+    },
+    {
+     "title": "ドキュメントを書くのをやめて、育てることにした──AI駆動開発におけるWiki管理、CodeAlmanacを試してみた",
+     "liked_count": 33,
+     "category": "その他"
+    },
+    {
+     "title": "プロンプトエンジニアリングのすすめかた",
+     "liked_count": 29,
+     "category": "その他"
+    }
+   ]
+  }
+ },
+ "spike_checks": {
+  "npm_related": {
+   "@openai/codex-sdk": {
+    "spike_week": 438611,
+    "base_weeks": [
+     348333,
+     373286,
+     438436,
+     407037
+    ],
+    "base_mean": 391773.0,
+    "ratio": 1.1195539253598386
+   },
+   "openai": {
+    "spike_week": 20467023,
+    "base_weeks": [
+     15330157,
+     18321478,
+     18464061,
+     20323370
+    ],
+    "base_mean": 18109766.5,
+    "ratio": 1.1301649306190669
+   },
+   "@openai/agents": {
+    "spike_week": 680831,
+    "base_weeks": [
+     474828,
+     546534,
+     561648,
+     644124
+    ],
+    "base_mean": 556783.5,
+    "ratio": 1.2227930604983803
+   }
+  },
+  "versions_published": [
+   [
+    "2026-04-30T16:43",
+    "0.128.0"
+   ],
+   [
+    "2026-05-07T17:05",
+    "0.129.0"
+   ]
+  ],
+  "release_note_lines": [
+   {
+    "tag": "rust-v0.130.0",
+    "published": "2026-05-08",
+    "line": "- Updated install and tooling docs to consistently use `cargo install --locked`. (#21592)"
+   },
+   {
+    "tag": "rust-v0.130.0",
+    "published": "2026-05-08",
+    "line": "- Added a faster Cargo profiling build profile and disabled empty doctest targets to speed up Rust development loops. (#21574, #21584)"
+   },
+   {
+    "tag": "rust-v0.130.0",
+    "published": "2026-05-08",
+    "line": "- #21592 Ensure all mentions of cargo-install are --locked @gankra-oai"
+   },
+   {
+    "tag": "rust-v0.130.0",
+    "published": "2026-05-08",
+    "line": "- #21637 feat: Update plugin share settings with discoverability @xl-openai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- Updated the embedded OpenAI Docs sample skill so API-key setup guidance stays aligned with other docs variants. (#21263)"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- Linux releases now build, publish, bundle, and verify a standalone `bwrap` fallback for npm and DotSlash installs. (#21255, #21256, #21257, #21312, #21285)"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- Vendored Bubblewrap was updated to 0.11.2, including upstream security changes around setuid support. (#21389)"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #20101 install WFP filters for Windows sandbox setup @iceweasel-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #20268 Sync remote installed plugin bundles @xli-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #20267 Emit analytics for remote plugin installs @xli-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #20722 Remove remote plugin uninstall prefix gate @xli-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #20576 codex: route metadata updates through ThreadStore @wiltzius-openai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #21257 release/npm: bundle standalone bwrap on Linux @bolinfest"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #21182 Move installation ID resolution out of core startup @jif-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #21367 rollout: coalesce thread updated_at touches @jif-oai"
+   },
+   {
+    "tag": "rust-v0.129.0",
+    "published": "2026-05-07",
+    "line": "- #21389 vendor: update bubblewrap to 0.11.2 @bolinfest"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Added `codex update`, configurable TUI keymaps, plan-mode nudges, action-required terminal titles, and active-turn `/statusline` and `/title` edits. (#19933, #18593, #19901, #18372, #19917)"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Improved plugin workflows with marketplace installation, remote bundle caching, remote uninstall, plugin-bundled hooks, hook enablement state, and external-agent config import. (#18704, #19914, #194"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Improved TUI reliability around terminal resize reflow, markdown list spacing, slash-command popup layout, keyboard cleanup, shell-mode escape, and working status updates. (#18575, #19706, #19511, #"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Fixed Bedrock model support for `apply_patch`, GPT-5.4 reasoning levels, and updated Bedrock GPT-5.4 endpoint/model metadata. (#19416, #19461, #20109)"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Updated the bundled OpenAI Docs skill for GPT-5.5, `gpt-image-2`, and clearer upgrade guidance. (#19407, #19443, #19422)"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- Stabilized CI and release plumbing with Bazel setup migration, release smoke-test pinning, and updated workflow pins/timeouts. (#19851, #19854, #19472, #19609)"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19407 Update bundled OpenAI Docs skill for GPT-5.5 @kkahadze-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19163 Harden package-manager install policy @mcgrew-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19244 Update unix socket transport to use WebSocket upgrade @willwang-openai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19389 Guard npm update readiness @shijie-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19058 Add /auto-review-denials retry approval flow @won-openai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19809 Allow Phase 2 memory claims after retry exhaustion @jif-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19854 ci: pin npm staging smoke test to a recent rust-release run @bolinfest"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19933 Add `codex update` command @etraut-openai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19914 feat: Cache remote plugin bundles on install @xl-openai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19456 Add remote plugin uninstall API @xli-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #18704 /plugins: add marketplace install flow @canvrno-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #20109 feat: update Bedrock Mantle endpoint and GPT-5.4 model ID @celia-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #20096 feat: Use remote installed plugin cache for skills and MCP @xl-openai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #19966 Require remote plugin detail before uninstall @xli-oai"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #20136 Update Codex login success page UX @rafael-jac"
+   },
+   {
+    "tag": "rust-v0.128.0",
+    "published": "2026-04-30",
+    "line": "- #20250 update codex_plugins_beta_setting (from workspace settings) @zamoshchin-openai"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- App-server plugin management can install remote plugins and upgrade configured marketplaces. (#18917, #19074)"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- Windows sandbox startup handles multiple CLI versions and installed app directories better, and background `Start-Process` calls avoid visible PowerShell windows. (#19044, #19180, #19214)"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- #19149 Update safety check wording @etraut-openai"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- #19214 do not attempt ACLs on installed codex dir @iceweasel-oai"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- #18917 [codex] Support remote plugin install writes @xli-oai"
+   },
+   {
+    "tag": "rust-v0.125.0",
+    "published": "2026-04-24",
+    "line": "- #19323 Update models.json and related fixtures @sayan-oai"
+   },
+   {
+    "tag": "rust-v0.124.0",
+    "published": "2026-04-23",
+    "line": "- Fixed permission-mode drift so `/permissions` changes survive side conversations and updated Full Access state is correctly reflected in MCP approval handling. (#18924, #19033)"
+   },
+   {
+    "tag": "rust-v0.124.0",
+    "published": "2026-04-23",
+    "line": "- #18909 Update /statusline and /title snapshots @canvrno-oai"
+   },
+   {
+    "tag": "rust-v0.124.0",
+    "published": "2026-04-23",
+    "line": "- #18852 [codex] Update imagegen system skill @vb-openai"
+   },
+   {
+    "tag": "rust-v0.124.0",
+    "published": "2026-04-23",
+    "line": "- #19043 Update bundled OpenAI Docs skill freshness check @kkahadze-oai"
+   },
+   {
+    "tag": "rust-v0.123.0",
+    "published": "2026-04-23",
+    "line": "- Updated app-server protocol docs for threadless MCP resource reads and namespaced dynamic tools (#18292, #18413)."
+   },
+   {
+    "tag": "rust-v0.123.0",
+    "published": "2026-04-23",
+    "line": "- #18586 Update models.json @aibrahim-oai"
+   },
+   {
+    "tag": "rust-v0.123.0",
+    "published": "2026-04-23",
+    "line": "- #18289 Wire the PatchUpdated events through app_server @akshaynathan"
+   },
+   {
+    "tag": "rust-v0.123.0",
+    "published": "2026-04-23",
+    "line": "- #18388 Update models.json @github-actions"
+   },
+   {
+    "tag": "rust-v0.123.0",
+    "published": "2026-04-23",
+    "line": "- #18597 Update realtime handoff transcript handling @guinness-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- Standalone installs are more self-contained, and `codex app` now opens or installs Desktop correctly on Windows and Intel Macs (#17022, #18500)."
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- Several TUI rough edges were fixed, including fatal skills-list failures, invalid resume hints, duplicate context statusline entries, `/model` menu loops, redundant memory notices, and terminal titl"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- Updated app-server docs for plugin API changes, marketplace removal, resume/fork token-usage replay, and warning notifications (#17277, #17751, #18023, #18298)."
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- Stabilized Bazel and CI with flake fixes, native Rust test sharding, scoped repository caches, stronger Windows clippy coverage, and updated `rules_rs`/LLVM pins (#17791, #18082, #18366, #18350, #18"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- Removed the stale core `models.json` and updated release preparation to refresh the active model catalog (#18585)."
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #17990 Auto install start-codex-exec.sh dependencies @pakrym-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #17022 Significantly improve standalone installer @efrazer-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18004 [docs] Restore SECURITY.md update from PR 17848 @evawong-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #17854 Update ToolSearch to be enabled by default @mzeng-openai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18092 [codex] Update realtime V2 VAD silence delay and 1.5 prompt @bxie-openai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18261 fix(tui): use BEL for terminal title updates @etraut-openai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #12640 Update models.json @github-actions"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18384 Update image resizing to fit 2048 square bounds @pakrym-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18449 [codex] Describe uninstalled cross-repo plugin reads @xli-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #18386 Update image outputs to default to high detail @pakrym-oai"
+   },
+   {
+    "tag": "rust-v0.122.0",
+    "published": "2026-04-20",
+    "line": "- #17721 Stabilize marketplace/remove installedRoot test @xli-oai"
+   }
+  ],
+  "issues_matching": {
+   "n": 70,
+   "titles": [
+    [
+     "2026-04-28",
+     19952,
+     "Windows app 26.422.8496.0: all shell commands fail with \"batch file arguments are invalid\" after update"
+    ],
+    [
+     "2026-04-28",
+     19972,
+     "Can't open codex desktop after update"
+    ],
+    [
+     "2026-04-28",
+     19993,
+     "Blank GUI window after update on macOS Tahoe (Apple Silicon) while CLI works normally"
+    ],
+    [
+     "2026-04-28",
+     20048,
+     "Windows Codex Desktop Browser Use fails to start app-server despite working npm CLI"
+    ],
+    [
+     "2026-04-29",
+     20143,
+     "Failed to update connection"
+    ],
+    [
+     "2026-04-29",
+     20211,
+     "Computer Use unavailable when Codex is updated under a different macOS user"
+    ],
+    [
+     "2026-04-29",
+     20217,
+     "Codex Windows desktop app stuck on logo/loading screen after clean reinstall"
+    ],
+    [
+     "2026-04-30",
+     20492,
+     "Desktop should update or restart remote Codex app-server when version is too old"
+    ],
+    [
+     "2026-04-30",
+     20493,
+     "Codex Desktop: chats disappear after update/import; imported threads open blank despite JSONL turns"
+    ],
+    [
+     "2026-04-30",
+     20526,
+     "Slack installation stalls on Windows"
+    ],
+    [
+     "2026-05-01",
+     20547,
+     "Codex Desktop sluggish after today's update to 26.429.20946"
+    ],
+    [
+     "2026-05-01",
+     20572,
+     "Brew package shows new update but update does not work"
+    ],
+    [
+     "2026-05-01",
+     20573,
+     "Codex Mac app high memory usage regression on macOS after update (26.422.62136)"
+    ],
+    [
+     "2026-05-01",
+     20579,
+     "Browser Use broken after today update: no node_repl/js or no Codex IAB backend discovered"
+    ],
+    [
+     "2026-05-01",
+     20589,
+     "plugin disppeared + constantly disconnecting + high use of energy = > heat => fans - all after most recent update"
+    ],
+    [
+     "2026-05-01",
+     20595,
+     "Provide a first-class standalone installer for native Codex binaries"
+    ],
+    [
+     "2026-05-01",
+     20597,
+     "Add winget install instructions"
+    ],
+    [
+     "2026-05-01",
+     20615,
+     "Update removes existing Commit Instructions"
+    ],
+    [
+     "2026-05-01",
+     20641,
+     "Windows: codex fails silently without Visual C++ Redistributable installed"
+    ],
+    [
+     "2026-05-01",
+     20673,
+     "mcp-search fails after clean reinstall on Windows: ChatGPT backend plugin/connectors requests return Cloudflare 403, Set"
+    ],
+    [
+     "2026-05-01",
+     20690,
+     "Auto Open/Update PR on web agent run"
+    ],
+    [
+     "2026-05-01",
+     20705,
+     "Codex App skill install spinner finishes, but the skill is not added on Windows"
+    ],
+    [
+     "2026-05-02",
+     20710,
+     "Gmail plugin shows installed checkmark while required app connection returns to Connect and exposes no tools"
+    ],
+    [
+     "2026-05-02",
+     20741,
+     "Codex Desktop project chat histories disappeared after recent update"
+    ],
+    [
+     "2026-05-02",
+     20775,
+     "ALT+ENTER no longer inserts blank line after update"
+    ],
+    [
+     "2026-05-02",
+     20776,
+     "Notification updates when Pet is active, cause desktops to switch switching"
+    ],
+    [
+     "2026-05-02",
+     20778,
+     "Codex Desktop: installed hatch-pet skill is not discoverable from slash command autocomplete"
+    ],
+    [
+     "2026-05-02",
+     20782,
+     "The Install.ps1 doesn't return OSArchitecture correctly for all Windows PowerShell Versions Correctly"
+    ],
+    [
+     "2026-05-02",
+     20810,
+     "Codex Desktop WSL runtime fails to activate WSL fnm Node/npm and falls back to Windows npm"
+    ],
+    [
+     "2026-05-02",
+     20821,
+     "Windows Codex App no longer shows gpt-5.5 after reinstall; CLI still has access"
+    ],
+    [
+     "2026-05-02",
+     20827,
+     "Windows npm install can leave Codex silently unable to launch without VC++ runtime"
+    ],
+    [
+     "2026-05-03",
+     20871,
+     "Codex CLI permanently fails with 401 on Linux VMs despite valid API key - auth.json not updated by codex login"
+    ],
+    [
+     "2026-05-04",
+     21074,
+     "Feature request: allow choosing install location for Codex app on Windows"
+    ],
+    [
+     "2026-05-05",
+     21177,
+     "Codex Desktop on Windows refreshes app-server-updated threads only after window focus returns"
+    ],
+    [
+     "2026-05-05",
+     21199,
+     "macOS 15.6 arm64: codex CLI installs via npm but native binary fails to execute (`spawn Unknown system error -88`)"
+    ],
+    [
+     "2026-05-05",
+     21247,
+     "Codex dependencies show as not installed and reinstall fails from Settings on Windows"
+    ],
+    [
+     "2026-05-06",
+     21327,
+     "Progress checklist can remain stale when work completes without update_plan calls"
+    ],
+    [
+     "2026-05-06",
+     21339,
+     "npm codex wrapper aborts on Linux shutdown in uv__epoll_ctl_prep during app-server teardown"
+    ],
+    [
+     "2026-05-06",
+     21425,
+     "Separate installed plugins from per-session skill metadata injection"
+    ],
+    [
+     "2026-05-07",
+     21470,
+     "Windows Codex Desktop sandbox blocks Node child_process, WSL, Schannel clients, and pip temp installs"
+    ],
+    [
+     "2026-05-07",
+     21520,
+     "Failed to parse the request body as JSON: client_metadata.x-codex-installation-id: EOF while parsing a string"
+    ],
+    [
+     "2026-05-07",
+     21538,
+     "Windows Codex app should provide a non-Microsoft Store installer for enterprise environments"
+    ],
+    [
+     "2026-05-07",
+     21607,
+     "Model switch confirmation should update the top status panel immediately"
+    ],
+    [
+     "2026-05-07",
+     21615,
+     "Provide a supported way for local IDE/wrapper installers to request trust   for installed hooks"
+    ],
+    [
+     "2026-05-08",
+     21618,
+     "Browser Use unavailable: node_repl / JavaScript execution tool not exposed despite Browser plugin installed"
+    ],
+    [
+     "2026-05-08",
+     21639,
+     "Hooks no longer run after Codex Desktop update"
+    ],
+    [
+     "2026-05-08",
+     21641,
+     "Settings entry missing/unresponsive after update on macOS (API key auth); Cmd+, still works"
+    ],
+    [
+     "2026-05-08",
+     21650,
+     "Codex Desktop for Windows: workspace dependencies Diagnose/Reinstall buttons are disabled"
+    ],
+    [
+     "2026-05-08",
+     21670,
+     "Windows Codex Desktop: Chrome plugin and Browser Use setup hang; plugin uninstall fails with os error 5"
+    ],
+    [
+     "2026-05-08",
+     21674,
+     "Windows: Chrome plugin shows \"Install failed\" in Codex UI even though Chrome extension is installed and enabled"
+    ],
+    [
+     "2026-05-08",
+     21680,
+     "Recent projects sidebar order does not update when switching active workspace"
+    ],
+    [
+     "2026-05-08",
+     21698,
+     "Chrome plugin installed and enabled, but automation calls time out on Windows"
+    ],
+    [
+     "2026-05-08",
+     21700,
+     "Computer Use Chrome extension is unavailable in Chrome Web Store; is there an offline installer?"
+    ],
+    [
+     "2026-05-08",
+     21714,
+     "Automation-specific memory.md appears reset after Codex Desktop update"
+    ],
+    [
+     "2026-05-08",
+     21734,
+     "All historical conversations missing from sidebar after auto-update; local data is intact"
+    ],
+    [
+     "2026-05-08",
+     21758,
+     "Installed custom skill (aihot) does not appear in available skills in fresh non-project sessions"
+    ],
+    [
+     "2026-05-08",
+     21769,
+     "Project-local model_provider and model_providers ignored after Windows 26.506.x update"
+    ],
+    [
+     "2026-05-08",
+     21771,
+     "Codex Web loses track of commits, state desyncs, stops suggesting to update PR or create new, does not show changes, not"
+    ],
+    [
+     "2026-05-08",
+     21774,
+     "Windows desktop app silently closed/restarted after 26.506 update; no crash artifact recorded"
+    ],
+    [
+     "2026-05-08",
+     21785,
+     "codex-linux-sandbox binary absent from @openai/codex npm package; permissions.network_access unusable without danger-ful"
+    ]
+   ]
+  }
+ }
+}

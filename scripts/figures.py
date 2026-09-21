@@ -156,3 +156,89 @@ fig.subplots_adjust(left=0.07, right=0.985, top=0.8, bottom=0.17, wspace=0.28)
 fig.savefig(OUT / "fig3_step_around_e.png")
 plt.close(fig)
 print("saved:", *[p.name for p in sorted(OUT.glob("fig*.png"))], "→", OUT)
+
+
+# ---- fig 4: 突出の週を、npm と経路に依らない指標で比べる（decisions/0003 の Q1）。直前 4 週の平均 = 1 の指数、対数目盛
+WHY = DATA / "why_codex_weekly.csv"
+if WHY.exists():
+    with open(WHY, encoding="utf-8") as f:
+        wk = list(csv.DictReader(f))
+    base_starts = {"2026-04-02", "2026-04-09", "2026-04-16", "2026-04-23"}
+    series = [("npm_downloads", "npm のダウンロード数", COLOR["codex"], 2.6, None),
+              ("releases_downloads_per_day", "GitHub Releases のダウンロード数", "#3a3a38", 1.4, "o"),
+              ("issues_created", "issue の作成数", "#5f5e5a", 1.4, "s"),
+              ("first_time_issue_authors", "初めて issue を立てた人", "#85847e", 1.4, "^"),
+              ("hn_stories", "Hacker News の投稿数", "#a9a8a0", 1.4, "D")]
+    rows = [r for r in wk if "2026-03-05" <= r["week_start_thu"] <= "2026-06-04"]
+    xs = [date.fromisoformat(r["week_start_thu"]) for r in rows]
+    fig, ax = plt.subplots(figsize=(9, 4.8))
+    ends = []
+    for key, label, color, lw, marker in series:
+        if any(r[key] == "" for r in rows):
+            continue
+        base = [float(r[key]) for r in wk if r["week_start_thu"] in base_starts]
+        ys = [float(r[key]) / (sum(base) / len(base)) for r in rows]
+        ax.plot(xs, ys, color=color, lw=lw, marker=marker, ms=4.5, label=label, solid_capstyle="round", zorder=3 if marker is None else 2)
+        ends.append((ys[-1], label))
+        if key == "npm_downloads":
+            k = max(range(len(ys)), key=lambda i: ys[i])
+            ax.annotate(f"npm {ys[k]:.0f} 倍", (xs[k], ys[k]), textcoords="offset points", xytext=(10, -2), fontsize=10, fontweight="bold", color=INK)
+    ax.axhline(1, color=INK2, lw=0.8)
+    ax.axhline(1.5, color=INK2, lw=0.8)
+    ax.text(xs[0], 1.56, "1.5 倍（「人の流入と整合」に数える閾値）", fontsize=7.8, color=INK2, va="bottom")
+    ax.axvspan(date(2026, 4, 30), date(2026, 5, 7), color=NEUTRAL, alpha=0.35, lw=0)
+    ax.set_yscale("log")
+    ax.set_ylim(0.15, 100)
+    ax.set_yticks([0.2, 0.5, 1, 2, 5, 10, 20, 50])
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g} 倍"))
+    ax.grid(axis="y")
+    ax.set_axisbelow(True)
+    ax.xaxis.set_major_locator(mdates.MonthLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
+    ax.set_ylabel("直前 4 週（04-02〜04-29）の平均 = 1")
+    ax.legend(loc="upper left", frameon=False, fontsize=8.5)
+    ax.set_title("「Codex が 12 倍」と報じられた週（灰色の帯）: npm は 49 倍、ほかの指標は 1.2〜1.7 倍")
+    ax.text(0, -0.11, "週は木曜はじまり（UTC）。openai/codex の issue は Bot を除く。Releases は安定版が最新だった区間に按分した値で、週ごとのぶれが大きい。\n"
+            "npm・GitHub・Hacker News の公開 API、2026-09-21 取得。どの指標も利用者数ではない",
+            transform=ax.transAxes, fontsize=7.5, color=INK2, va="top")
+    fig.subplots_adjust(left=0.1, right=0.98, top=0.92, bottom=0.17)
+    fig.savefig(OUT / "fig4_spike_week_index.png")
+    plt.close(fig)
+    print("saved: fig4_spike_week_index.png")
+
+
+# ---- fig 5: 月別の指数（2026-01 = 1）。npm の日次の中央値と、issue を立てた人の数。3 ツールを同じ作りで（事後の参考）
+MONTHLY = DATA / "why_monthly.csv"
+if MONTHLY.exists():
+    with open(MONTHLY, encoding="utf-8") as f:
+        mm = list(csv.DictReader(f))
+    fig, axes = plt.subplots(1, 3, figsize=(9, 4.1), sharey=True)
+    for ax, t in zip(axes, ("codex", "claude", "gemini")):
+        rows = [r for r in mm if r["tool"] == t]
+        xs = [int(r["month"][5:]) for r in rows]
+        npm = [float(r["npm_daily_median_nonzero"]) / float(rows[0]["npm_daily_median_nonzero"]) for r in rows]
+        au = [float(r["issue_authors"]) / float(rows[0]["issue_authors"]) for r in rows]
+        ax.plot(xs, npm, color=COLOR[t], lw=2.4, label="npm のダウンロード数（日次の中央値）", solid_capstyle="round")
+        ax.plot(xs, au, color=INK2, lw=1.6, marker="o", ms=4, label="issue を立てた人の数")
+        ax.annotate(f"npm {npm[-1]:.1f} 倍", (xs[-1], npm[-1]), textcoords="offset points", xytext=(-4, 7), ha="right", fontsize=8.5, color=INK)
+        ax.annotate(f"人 {au[-1]:.2g} 倍", (xs[-1], au[-1]), textcoords="offset points", xytext=(-4, -13), ha="right", fontsize=8.5, color=INK)
+        ax.axhline(1, color=INK2, lw=0.8)
+        ax.set_yscale("log")
+        ax.set_ylim(0.08, 60)
+        ax.set_yticks([0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50])
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g} 倍"))
+        ax.set_xticks(xs)
+        ax.set_xticklabels([f"{x} 月" for x in xs], fontsize=8)
+        ax.grid(axis="y")
+        ax.set_axisbelow(True)
+        ax.set_title(NAME[t], fontsize=10)
+    handles = [plt.Line2D([], [], color=INK, lw=2.4, label="太い色の線: npm のダウンロード数（日次の中央値）"),
+               plt.Line2D([], [], color=INK2, lw=1.6, marker="o", ms=4, label="丸つきの線: issue を立てた人の数")]
+    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.005, 0.925), frameon=False, fontsize=8.5, ncol=2)
+    fig.suptitle("2026-01 を 1 としたとき: npm のダウンロード数と、GitHub で issue を立てた人の数（対数目盛）", x=0.01, ha="left", fontsize=10.5, fontweight="bold")
+    fig.text(0.01, 0.015, "npm は 0 の日を除いた日次の中央値（突出の 8 日は中央値にほぼ効かない）。issue は Bot を除く。どちらも利用者数ではない。\n"
+             "Codex CLI の npm は 2026-02-11 から 1 インストールが約 2 回に数えられている（36.3 倍のうち約 2 倍ぶん）", fontsize=7.5, color=INK2)
+    fig.subplots_adjust(left=0.08, right=0.985, top=0.76, bottom=0.19, wspace=0.08)
+    fig.savefig(OUT / "fig5_monthly_index.png")
+    plt.close(fig)
+    print("saved: fig5_monthly_index.png")
