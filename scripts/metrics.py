@@ -15,6 +15,9 @@ analyze(raw_dir) が生データのフォルダ（fetch.py の出力、または
 - formula `codex` を同じツールとみなす条件は、Homebrew のメタデータの homepage か urls.stable.url か urls.head.url に
   `github.com/openai/codex` を含むこと
 - 撤退基準 C の P2 は、3 ツールのどれか 1 つで「跳ねる」か「跳ねない」が出れば「出た」と数える
+
+取得後に足した決め（2026-09-21。JSON の構造だけを見て、install 数の値を表示する前に決めた）:
+- Homebrew の analytics は、名前ごとにオプション違い（`gemini-cli --HEAD` など）の行を持つ。同じ名前の行は合算する
 """
 import json
 import sys
@@ -230,12 +233,11 @@ def p2(daily: dict[date, int], release_days, last: date) -> dict:
 
 
 def brew_count(body: dict | None, name: str) -> int | None:
-    if body is None:
+    """analytics の JSON は {"formulae": {名前: [{"formula" か "cask": "名前 [オプション]", "count": "1,234"}, …]}}。
+    同じ名前のオプション違い（`--HEAD` など）は合算する。一覧に無ければ None。"""
+    if body is None or name not in body["formulae"]:
         return None
-    for item in body["items"]:
-        if item.get("formula", item.get("cask")) == name:
-            return int(str(item["count"]).replace(",", ""))
-    return None
+    return sum(int(str(row["count"]).replace(",", "")) for row in body["formulae"][name])
 
 
 def formula_is_openai_codex(meta: dict | None) -> dict:

@@ -107,9 +107,13 @@ def registry(tool: str, end: date) -> dict:
     return {"name": pkg, "dist-tags": {"latest": latest}, "versions": versions, "time": times}
 
 
-def brew_items(key: str, rows: dict[str, int]) -> list[dict]:
-    rows = {"zz-other": 1234567, **rows}
-    return [{"number": i, key: k, "count": f"{v:,}", "percent": "1.00"} for i, (k, v) in enumerate(rows.items(), 1)]
+def brew_formulae(key: str, rows: dict[str, int]) -> dict[str, list[dict]]:
+    """実際の形: 名前 → オプション違いの行のリスト。gemini-cli は 10 件を `--HEAD` の行に分ける（合算されるはず）。"""
+    out = {"zz-other": [{key: "zz-other", "count": "1,234,567"}]}
+    for k, v in rows.items():
+        out[k] = ([{key: k, "count": f"{v - 10:,}"}, {key: f"{k} --HEAD", "count": "10"}] if k == "gemini-cli"
+                  else [{key: k, "count": f"{v:,}"}])
+    return out
 
 
 BREW = {
@@ -170,7 +174,8 @@ def build(raw: Path, fetch_date: date, variant: str = "base") -> None:
                 status = 404
             key = "cask" if spec["category"] == "cask-install" else "formula"
             body = {"category": spec["category"], "start_date": "2026-08-22", "end_date": "2026-09-21",
-                    "items": brew_items(key, BREW[(spec["category"], spec["period"])])}
+                    "total_items": 3, "total_count": 0,
+                    "formulae": brew_formulae(key, BREW[(spec["category"], spec["period"])])}
         elif kind == "brew_meta":
             if variant == "no_brew":
                 status = 404
