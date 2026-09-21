@@ -1,0 +1,25 @@
+# 取得した生データ（npm・Homebrew の JSON）。公開するのは docs/ の集計だけ
+/data/
+*.csv
+!docs/**/*.csv
+
+# 非公開の備忘（正本は zenn-content/ideas/。ここは junction）
+ideas/
+
+# 認証情報
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
