@@ -49,3 +49,32 @@
 - Qiita「Codex CLIは躍進しているのか？ ～データで見る2025年8月のAI Codingの動向まとめ～」（2025-09-01）: GitHub の公開リポジトリ 9,000 個の設定ファイルの有無で 16 ツールの採用を数える。npm のダウンロード数・リリース頻度・配布経路は扱っていない（🔶 本文の要約）https://qiita.com/kotauchisunsun/items/a1e06dd590f945ae09ef
 - TanStack の npm stats など、3 パッケージの比較チャートを見せるツールがある（❌ チャートは開いていない）。生のチャートを並べるだけでは新規性が無い
 - Zenn・note・DEV の比較記事は機能・料金の比較（🔶 題名と要約）
+
+## 「なぜ増えたのか」のフェーズ 0（2026-09-21、判定の後。代理指標の値は見ていない）
+
+### 先行・報道（npm の突出の週を「逆転」として報じたもの）
+
+| 出典 | 日付 | 内容 | 確認 |
+|---|---|---|---|
+| Espressio AI「Codex Passed Claude Code on npm: What the Spike Really Means」 https://espressio.ai/blog/codex-passed-claude-code-npm/ | 2026-05-06 | npm 公式 API（同日取得）で、直近 1 週間は `@openai/codex` 約 1 億 9,550 万・`@anthropic-ai/claude-code` 約 540 万、直近 1 か月は約 2 億 1,050 万と約 4,650 万。説明は「配布経路の違い（Claude Code は npm を非推奨にした）」と一般的な歪み（自動更新・CI・キャッシュ）。**同じパッケージ名のプラットフォーム版、突出が 05-07 に元へ戻ったこと（執筆時点では未来）には触れていない** | 🔶 WebFetch の要約 |
+| BigGo Finance「Claude Code Faces Crisis of Trust: Users Flee as Codex Downloads Surge 12x」 https://finance.biggo.com/news/YIqNCp4BYH_ypPqO39KP | 2026-05-09 | TickerTrends の数字として、05-03 までの週に Codex 8,610 万・Claude Code 720 万（12 倍）、増加は「04-30 から 05-03 にほぼ集中」。原因を Claude 側のモデル更新後の品質低下と利用枠への不満による「利用者の流出」と説明。**npm の数え方への注意書きは無い** | 🔶 WebFetch の要約 |
+| 同じ「12 倍」「週次 +1,397%」を伝える記事が中国語圏に複数（Yahoo 香港、cmoney、知乎、DoNews。2026-05-09〜10 ごろ） | ── | 題名と検索結果の要約のみ | 🔶 |
+| 日本語での同種の報道・記事 | ── | 検索 2 回では見つからず（検索ツールが米国向けなので、無いとは言えない） | ❌ |
+
+手元の日次（2026-09-21 取得）との対応: 04-26〜05-02 の 7 日間の合計は Codex 約 8,668 万・Claude Code 約 786 万で、報じられた 8,610 万・720 万と同じ桁。突出は 05-06 まで続き、05-07 に 85 万へ戻った（[posthoc.md](posthoc.md) 7 節）。
+
+### 配布経路の追加の事実
+
+- Claude Code の GitHub の README は「Installation via npm is deprecated.」と明記し、npm を「NPM (Deprecated)」として最後に置いている（✅ `gh api repos/anthropics/claude-code/readme`、2026-09-21）。README のインストール手順の直近の更新コミットは 2026-01-12・2025-11-09・2025-11-03（✅。非推奨の記述がどのコミットで入ったかは ❌ 未確認）
+
+### 経路に依らない代理指標の到達（✅ 構造だけ確認。値は表示していない）
+
+| 指標 | 取り方 | 確認したこと |
+|---|---|---|
+| issue の作成数（月・週） | GitHub Search API `search/issues?q=repo:…+is:issue+created:開始..終了` の `total_count`。認証つきで 30 回/分 | 3 リポジトリ（openai/codex、anthropics/claude-code、google-gemini/gemini-cli）とも存在し issue が有効。`incomplete_results: false` |
+| issue の作成者（初めて立てた人の数） | REST `repos/…/issues?state=all`（100 件/ページ、`user.login` と `created_at`） | 項目の存在 |
+| GitHub Releases のダウンロード数（版ごとの累計） | REST `repos/…/releases` の `assets[].download_count` | 3 リポジトリとも項目あり。openai/codex は 1 リリース 176 アセット（cask とインストールスクリプトの取得元）、claude-code は 10、gemini-cli は 3 |
+| Hacker News の投稿数・ポイント | Algolia の公開 API `hn.algolia.com/api/v1/search_by_date`（`created_at_i`、`points`、`num_comments`） | 到達と項目 |
+| GitHub のスター履歴 | REST は 404、GraphQL は edges が空 | **取れない**（使わない） |
+| 公式の変更履歴 | https://learn.chatgpt.com/docs/changelog （developers.openai.com/codex/changelog から 308 で転送）。月ごとの見出し、2025-05〜2026-09-18、月 3〜8 件、ラベルは「Codex CLI」「General」など | 🔶 構造だけ。2026-04〜05 の項目の中身は未読 |
+| Zenn の記事数（日本語の関心） | zenn-trend の 2026-09-04 取得ぶん（トピック `codex`・`codexcli`・`geminicli` は全期間。`claudecode` は一覧の上限で 2026-04 以降だけ） | 月別の本数は 2026-03〜07 を見た（codex: 134・125・278・257・236） |
