@@ -1,0 +1,783 @@
+{
+ "R1a": {
+  "tool": "claude",
+  "rule": "quality",
+  "numerator": {
+   "n_match": 352,
+   "n_total": 19999,
+   "share": 0.0176008800440022
+  },
+  "denominator": {
+   "n_match": 164,
+   "n_total": 13272,
+   "share": 0.01235684147076552
+  },
+  "ratio": 1.424383414292666,
+  "verdict": "保留"
+ },
+ "R1m": {
+  "tool": "claude",
+  "rule": "model",
+  "numerator": {
+   "n_match": 234,
+   "n_total": 19999,
+   "share": 0.011700585029251462
+  },
+  "denominator": {
+   "n_match": 121,
+   "n_total": 13272,
+   "share": 0.009116937914406268
+  },
+  "ratio": 1.283389789324177,
+  "verdict": "保留"
+ },
+ "R1b": {
+  "tool": "claude",
+  "rule": "limits",
+  "numerator": {
+   "n_match": 1068,
+   "n_total": 19999,
+   "share": 0.05340267013350668
+  },
+  "denominator": {
+   "n_match": 481,
+   "n_total": 13272,
+   "share": 0.036241711874623266
+  },
+  "ratio": 1.4735140083407499,
+  "verdict": "保留"
+ },
+ "R3c": {
+  "tool": "claude",
+  "rule": "other_from_claude",
+  "numerator": {
+   "n_match": 36,
+   "n_total": 30521,
+   "share": 0.0011795157432587398
+  },
+  "denominator": {
+   "n_match": 5,
+   "n_total": 13272,
+   "share": 0.00037673297166968055
+  },
+  "ratio": 3.130906588905999,
+  "verdict": "判定不能"
+ },
+ "R3x": {
+  "tool": "codex",
+  "rule": "other_from_codex",
+  "numerator": {
+   "n_match": 29,
+   "n_total": 6663,
+   "share": 0.00435239381659913
+  },
+  "denominator": {
+   "n_match": 5,
+   "n_total": 2122,
+   "share": 0.00235626767200754
+  },
+  "ratio": 1.8471559357646707,
+  "verdict": "判定不能"
+ },
+ "control": {
+  "codex": {
+   "quality": {
+    "numerator": {
+     "n_match": 20,
+     "n_total": 2968,
+     "share": 0.006738544474393531
+    },
+    "denominator": {
+     "n_match": 15,
+     "n_total": 2122,
+     "share": 0.00706880301602262
+    },
+    "ratio": 0.9532794249775383,
+    "verdict": "判定不能"
+   },
+   "limits": {
+    "numerator": {
+     "n_match": 103,
+     "n_total": 2968,
+     "share": 0.034703504043126686
+    },
+    "denominator": {
+     "n_match": 55,
+     "n_total": 2122,
+     "share": 0.025918944392082942
+    },
+    "ratio": 1.338924283263906,
+    "verdict": "保留"
+   }
+  },
+  "gemini": {
+   "quality": {
+    "numerator": {
+     "n_match": 14,
+     "n_total": 2224,
+     "share": 0.006294964028776978
+    },
+    "denominator": {
+     "n_match": 25,
+     "n_total": 2340,
+     "share": 0.010683760683760684
+    },
+    "ratio": 0.5892086330935251,
+    "verdict": "不支持"
+   },
+   "limits": {
+    "numerator": {
+     "n_match": 77,
+     "n_total": 2224,
+     "share": 0.03462230215827338
+    },
+    "denominator": {
+     "n_match": 42,
+     "n_total": 2340,
+     "share": 0.017948717948717947
+    },
+    "ratio": 1.9289568345323742,
+    "verdict": "支持"
+   }
+  }
+ },
+ "shares_by_period": {
+  "codex": {
+   "quality": {
+    "P0": {
+     "n_match": 15,
+     "n_total": 2122,
+     "share": 0.00706880301602262
+    },
+    "P1": {
+     "n_match": 20,
+     "n_total": 2968,
+     "share": 0.006738544474393531
+    },
+    "P2": {
+     "n_match": 30,
+     "n_total": 3695,
+     "share": 0.008119079837618403
+    }
+   },
+   "limits": {
+    "P0": {
+     "n_match": 55,
+     "n_total": 2122,
+     "share": 0.025918944392082942
+    },
+    "P1": {
+     "n_match": 103,
+     "n_total": 2968,
+     "share": 0.034703504043126686
+    },
+    "P2": {
+     "n_match": 146,
+     "n_total": 3695,
+     "share": 0.039512855209742896
+    }
+   },
+   "other_from_codex": {
+    "P0": {
+     "n_match": 5,
+     "n_total": 2122,
+     "share": 0.00235626767200754
+    },
+    "P1": {
+     "n_match": 9,
+     "n_total": 2968,
+     "share": 0.003032345013477089
+    },
+    "P2": {
+     "n_match": 20,
+     "n_total": 3695,
+     "share": 0.005412719891745603
+    }
+   }
+  },
+  "claude": {
+   "model": {
+    "P0": {
+     "n_match": 121,
+     "n_total": 13272,
+     "share": 0.009116937914406268
+    },
+    "P1": {
+     "n_match": 234,
+     "n_total": 19999,
+     "share": 0.011700585029251462
+    },
+    "P2": {
+     "n_match": 116,
+     "n_total": 10522,
+     "share": 0.01102452005322182
+    }
+   },
+   "quality": {
+    "P0": {
+     "n_match": 164,
+     "n_total": 13272,
+     "share": 0.01235684147076552
+    },
+    "P1": {
+     "n_match": 352,
+     "n_total": 19999,
+     "share": 0.0176008800440022
+    },
+    "P2": {
+     "n_match": 149,
+     "n_total": 10522,
+     "share": 0.014160805930431477
+    }
+   },
+   "limits": {
+    "P0": {
+     "n_match": 481,
+     "n_total": 13272,
+     "share": 0.036241711874623266
+    },
+    "P1": {
+     "n_match": 1068,
+     "n_total": 19999,
+     "share": 0.05340267013350668
+    },
+    "P2": {
+     "n_match": 586,
+     "n_total": 10522,
+     "share": 0.05569283406196541
+    }
+   },
+   "other_from_claude": {
+    "P0": {
+     "n_match": 5,
+     "n_total": 13272,
+     "share": 0.00037673297166968055
+    },
+    "P1": {
+     "n_match": 14,
+     "n_total": 19999,
+     "share": 0.0007000350017500875
+    },
+    "P2": {
+     "n_match": 22,
+     "n_total": 10522,
+     "share": 0.002090857251473104
+    }
+   }
+  },
+  "gemini": {
+   "quality": {
+    "P0": {
+     "n_match": 25,
+     "n_total": 2340,
+     "share": 0.010683760683760684
+    },
+    "P1": {
+     "n_match": 14,
+     "n_total": 2224,
+     "share": 0.006294964028776978
+    },
+    "P2": {
+     "n_match": 12,
+     "n_total": 841,
+     "share": 0.014268727705112961
+    }
+   },
+   "limits": {
+    "P0": {
+     "n_match": 42,
+     "n_total": 2340,
+     "share": 0.017948717948717947
+    },
+    "P1": {
+     "n_match": 77,
+     "n_total": 2224,
+     "share": 0.03462230215827338
+    },
+    "P2": {
+     "n_match": 41,
+     "n_total": 841,
+     "share": 0.04875148632580262
+    }
+   },
+   "other_from_codex": {
+    "P0": {
+     "n_match": 8,
+     "n_total": 2340,
+     "share": 0.003418803418803419
+    },
+    "P1": {
+     "n_match": 14,
+     "n_total": 2224,
+     "share": 0.006294964028776978
+    },
+    "P2": {
+     "n_match": 4,
+     "n_total": 841,
+     "share": 0.0047562425683709865
+    }
+   }
+  }
+ },
+ "R2": {
+  "codex": {
+   "P0": {
+    "counts": {
+     "quality": 15,
+     "limits": 55,
+     "other": 2052
+    },
+    "total": 2122,
+    "per_week": {
+     "quality": 1.875,
+     "limits": 6.875,
+     "other": 256.5
+    },
+    "total_per_week": 265.25
+   },
+   "P1": {
+    "counts": {
+     "quality": 20,
+     "limits": 103,
+     "other": 2845
+    },
+    "total": 2968,
+    "per_week": {
+     "quality": 2.916666666666667,
+     "limits": 15.020833333333334,
+     "other": 414.89583333333337
+    },
+    "total_per_week": 432.83333333333337
+   },
+   "P2": {
+    "counts": {
+     "quality": 30,
+     "limits": 143,
+     "other": 3522
+    },
+    "total": 3695,
+    "per_week": {
+     "quality": 6.0,
+     "limits": 28.599999999999998,
+     "other": 704.4000000000001
+    },
+    "total_per_week": 739.0
+   }
+  },
+  "claude": {
+   "P0": {
+    "counts": {
+     "model": 121,
+     "quality": 155,
+     "limits": 477,
+     "other": 12519
+    },
+    "total": 13272,
+    "per_week": {
+     "model": 15.125,
+     "quality": 19.375,
+     "limits": 59.625,
+     "other": 1564.875
+    },
+    "total_per_week": 1659.0
+   },
+   "P1": {
+    "counts": {
+     "model": 234,
+     "quality": 333,
+     "limits": 1044,
+     "other": 18388
+    },
+    "total": 19999,
+    "per_week": {
+     "model": 34.125,
+     "quality": 48.5625,
+     "limits": 152.25,
+     "other": 2681.583333333333
+    },
+    "total_per_week": 2916.520833333333
+   },
+   "P2": {
+    "counts": {
+     "model": 116,
+     "quality": 143,
+     "limits": 579,
+     "other": 9684
+    },
+    "total": 10522,
+    "per_week": {
+     "model": 23.200000000000003,
+     "quality": 28.599999999999998,
+     "limits": 115.80000000000001,
+     "other": 1936.8000000000002
+    },
+    "total_per_week": 2104.4
+   }
+  },
+  "gemini": {
+   "P0": {
+    "counts": {
+     "quality": 25,
+     "limits": 42,
+     "other": 2273
+    },
+    "total": 2340,
+    "per_week": {
+     "quality": 3.125,
+     "limits": 5.25,
+     "other": 284.125
+    },
+    "total_per_week": 292.5
+   },
+   "P1": {
+    "counts": {
+     "quality": 14,
+     "limits": 77,
+     "other": 2133
+    },
+    "total": 2224,
+    "per_week": {
+     "quality": 2.041666666666667,
+     "limits": 11.229166666666668,
+     "other": 311.0625
+    },
+    "total_per_week": 324.33333333333337
+   },
+   "P2": {
+    "counts": {
+     "quality": 12,
+     "limits": 41,
+     "other": 788
+    },
+    "total": 841,
+    "per_week": {
+     "quality": 2.4,
+     "limits": 8.200000000000001,
+     "other": 157.60000000000002
+    },
+    "total_per_week": 168.2
+   }
+  }
+ },
+ "R4": {
+  "codex_issue_titles_5_5_weekly": [
+   {
+    "week_start": "2026-03-30",
+    "total": 429,
+    "gpt55": 0
+   },
+   {
+    "week_start": "2026-04-06",
+    "total": 400,
+    "gpt55": 0
+   },
+   {
+    "week_start": "2026-04-13",
+    "total": 513,
+    "gpt55": 0
+   },
+   {
+    "week_start": "2026-04-20",
+    "total": 721,
+    "gpt55": 27
+   },
+   {
+    "week_start": "2026-04-27",
+    "total": 665,
+    "gpt55": 10
+   },
+   {
+    "week_start": "2026-05-04",
+    "total": 733,
+    "gpt55": 14
+   },
+   {
+    "week_start": "2026-05-11",
+    "total": 754,
+    "gpt55": 5
+   },
+   {
+    "week_start": "2026-05-18",
+    "total": 764,
+    "gpt55": 6
+   },
+   {
+    "week_start": "2026-05-25",
+    "total": 712,
+    "gpt55": 13
+   }
+  ],
+  "hn_top": {
+   "codex": {
+    "P0": [
+     {
+      "title": "GPT-5.3-Codex",
+      "points": 1530,
+      "created_at_i": 1770314888
+     },
+     {
+      "title": "GPT‑5.3‑Codex‑Spark",
+      "points": 890,
+      "created_at_i": 1770919569
+     },
+     {
+      "title": "The Codex App",
+      "points": 805,
+      "created_at_i": 1770055368
+     },
+     {
+      "title": "Unrolling the Codex agent loop",
+      "points": 456,
+      "created_at_i": 1769200956
+     },
+     {
+      "title": "Launch HN: Omnara (YC S25) – Run Claude Code and Codex from anywhere",
+      "points": 147,
+      "created_at_i": 1770916468
+     }
+    ],
+    "P1": [
+     {
+      "title": "Codex for almost everything",
+      "points": 1001,
+      "created_at_i": 1776359539
+     },
+     {
+      "title": "I ran Gemma 4 as a local model in Codex CLI",
+      "points": 285,
+      "created_at_i": 1776026588
+     },
+     {
+      "title": "Codex Hacked a Samsung TV",
+      "points": 259,
+      "created_at_i": 1776336285
+     },
+     {
+      "title": "Codex pricing to align with API token usage, instead of per-message",
+      "points": 211,
+      "created_at_i": 1775404688
+     },
+     {
+      "title": "Show HN: I built a social media management tool in 3 weeks with Claude and Codex",
+      "points": 190,
+      "created_at_i": 1776072416
+     }
+    ],
+    "P2": [
+     {
+      "title": "Codex is now in the ChatGPT mobile app",
+      "points": 486,
+      "created_at_i": 1778789174
+     },
+     {
+      "title": "A Claude Code and Codex Skill for Deliberate Skill Development",
+      "points": 253,
+      "created_at_i": 1778728411
+     },
+     {
+      "title": "Codex-maxxing",
+      "points": 99,
+      "created_at_i": 1779164685
+     },
+     {
+      "title": "Codex is now available on mobile via ChatGPT app",
+      "points": 38,
+      "created_at_i": 1778789863
+     },
+     {
+      "title": "An open-source spec for Codex orchestration: Symphony",
+      "points": 27,
+      "created_at_i": 1777312360
+     }
+    ]
+   },
+   "claude": {
+    "P0": [
+     {
+      "title": "Cowork: Claude Code for the rest of your work",
+      "points": 1298,
+      "created_at_i": 1768246039
+     },
+     {
+      "title": "Claude Code is being dumbed down?",
+      "points": 1085,
+      "created_at_i": 1770834219
+     },
+     {
+      "title": "Warcraft III Peon Voice Notifications for Claude Code",
+      "points": 1006,
+      "created_at_i": 1770873529
+     },
+     {
+      "title": "How I use Claude Code: Separation of planning and execution",
+      "points": 976,
+      "created_at_i": 1771720145
+     },
+     {
+      "title": "How to code Claude Code in 200 lines of code",
+      "points": 816,
+      "created_at_i": 1767902066
+     }
+    ],
+    "P1": [
+     {
+      "title": "Claude Code's source code has been leaked via a map file in their NPM registry",
+      "points": 2095,
+      "created_at_i": 1774947640
+     },
+     {
+      "title": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode",
+      "points": 1376,
+      "created_at_i": 1774962270
+     },
+     {
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+      "points": 1364,
+      "created_at_i": 1775483435
+     },
+     {
+      "title": "Claude Code Unpacked : A visual guide",
+      "points": 1128,
+      "created_at_i": 1775020537
+     },
+     {
+      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
+      "points": 1099,
+      "created_at_i": 1775256924
+     }
+    ],
+    "P2": [
+     {
+      "title": "Claude Code refuses requests or charges extra if your commits mention \"OpenClaw\"",
+      "points": 1349,
+      "created_at_i": 1777559818
+     },
+     {
+      "title": "An update on recent Claude Code quality reports",
+      "points": 942,
+      "created_at_i": 1776966518
+     },
+     {
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+      "points": 678,
+      "created_at_i": 1777846400
+     },
+     {
+      "title": "Who owns the code Claude Code wrote?",
+      "points": 557,
+      "created_at_i": 1777375492
+     },
+     {
+      "title": "Using Claude Code: The unreasonable effectiveness of HTML",
+      "points": 528,
+      "created_at_i": 1778302432
+     }
+    ]
+   },
+   "gemini": {
+    "P0": [
+     {
+      "title": "Evolve SDK – Open-Source Manus Powered by Claude Code, Codex CLI, Gemini CLI",
+      "points": 7,
+      "created_at_i": 1770238545
+     },
+     {
+      "title": "Codex vs. Claude Code vs. Gemini CLI – Agent Leaderboard",
+      "points": 4,
+      "created_at_i": 1770050367
+     },
+     {
+      "title": "Gemini CLI bot infinite loop",
+      "points": 3,
+      "created_at_i": 1768573519
+     },
+     {
+      "title": "Gemini CLI: Code and Create with an Open-Source Agent",
+      "points": 3,
+      "created_at_i": 1769019636
+     },
+     {
+      "title": "Choosing Antigravity or Gemini CLI",
+      "points": 3,
+      "created_at_i": 1770236716
+     }
+    ],
+    "P1": [
+     {
+      "title": "Show HN: Agentic Copilot – Bring Claude Code, OpenCode, Gemini CLI into Obsidian",
+      "points": 9,
+      "created_at_i": 1773924305
+     },
+     {
+      "title": "Gemini CLI: mitigating abuse and prioritizing traffic",
+      "points": 7,
+      "created_at_i": 1773950939
+     },
+     {
+      "title": "Ask HN: Gemini CLI vs. Claude Code",
+      "points": 6,
+      "created_at_i": 1774928951
+     },
+     {
+      "title": "Plan mode is now available in Gemini CLI",
+      "points": 4,
+      "created_at_i": 1773319097
+     },
+     {
+      "title": "Show HN: Voice Mode for Gemini CLI Using the Live API",
+      "points": 4,
+      "created_at_i": 1773516965
+     }
+    ],
+    "P2": [
+     {
+      "title": "Gemini CLI will stop working from June 18, 2026",
+      "points": 406,
+      "created_at_i": 1779213790
+     },
+     {
+      "title": "Show HN: You can now run Gemini CLI in the browser",
+      "points": 5,
+      "created_at_i": 1777557598
+     },
+     {
+      "title": "Running Gemini CLI in the Browser via WebAssembly",
+      "points": 4,
+      "created_at_i": 1777643945
+     },
+     {
+      "title": "Bye-bye, Gemini CLI; Google's gone and swapped you for a closed-source AI",
+      "points": 4,
+      "created_at_i": 1779313190
+     },
+     {
+      "title": "Ask HN: Recommended Gemini CLI extensions/skills for token consumption",
+      "points": 2,
+      "created_at_i": 1777530325
+     }
+    ]
+   }
+  },
+  "hn_codex_titles_5_5_by_month": {
+   "2026-04": 4,
+   "2026-06": 4,
+   "2026-07": 2
+  }
+ },
+ "handling": {
+  "codex": {
+   "n": 9521,
+   "closed_share": 0.1463081609074677,
+   "closed_within_7d_share": 0.105556139061023,
+   "closed_within_30d_share": 0.1334943808423485,
+   "median_days_to_close": 0.6071412037037037,
+   "reasons_among_closed": {
+    "COMPLETED": 0.628140703517588,
+    "DUPLICATE": 0.24192390524048815,
+    "NOT_PLANNED": 0.1299353912419239
+   },
+   "commented_share": 0.7969751076567587,
+   "median_comments": 1
+  }
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "note": "事後の参考（0005 の規律 6）。数えたのは Claude。標本は最大 40 件で、適合率の誤差は ±15 ポイント程度。判定は変えない",
+ "cells": {
+  "claude|quality": {
+   "P0": {
+    "n_match": 164,
+    "n_sample": 40,
+    "yes": 20,
+    "ambiguous": 5,
+    "no": 15,
+    "precision_strict": 0.5,
+    "precision_loose": 0.625,
+    "raw_share": 0.01235684147076552,
+    "adjusted_share_strict": 0.00617842073538276,
+    "adjusted_share_loose": 0.00772302591922845
+   },
+   "P1": {
+    "n_match": 352,
+    "n_sample": 40,
+    "yes": 27,
+    "ambiguous": 4,
+    "no": 9,
+    "precision_strict": 0.675,
+    "precision_loose": 0.775,
+    "raw_share": 0.0176008800440022,
+    "adjusted_share_strict": 0.011880594029701486,
+    "adjusted_share_loose": 0.013640682034101705
+   },
+   "P2": {
+    "n_match": 149,
+    "n_sample": 40,
+    "yes": 23,
+    "ambiguous": 7,
+    "no": 10,
+    "precision_strict": 0.575,
+    "precision_loose": 0.75,
+    "raw_share": 0.014160805930431477,
+    "adjusted_share_strict": 0.008142463409998099,
+    "adjusted_share_loose": 0.010620604447823607
+   },
+   "ratio_P1_P0": {
+    "raw": 1.424383414292666,
+    "adjusted_strict": 1.922917609295099,
+    "adjusted_loose": 1.7662354337229058
+   }
+  },
+  "claude|model": {
+   "P0": {
+    "n_match": 121,
+    "n_sample": 40,
+    "yes": 37,
+    "ambiguous": 0,
+    "no": 3,
+    "precision_strict": 0.925,
+    "precision_loose": 0.925,
+    "raw_share": 0.009116937914406268,
+    "adjusted_share_strict": 0.008433167570825798,
+    "adjusted_share_loose": 0.008433167570825798
+   },
+   "P1": {
+    "n_match": 234,
+    "n_sample": 40,
+    "yes": 38,
+    "ambiguous": 0,
+    "no": 2,
+    "precision_strict": 0.95,
+    "precision_loose": 0.95,
+    "raw_share": 0.011700585029251462,
+    "adjusted_share_strict": 0.011115555777788888,
+    "adjusted_share_loose": 0.011115555777788888
+   },
+   "P2": {
+    "n_match": 116,
+    "n_sample": 40,
+    "yes": 36,
+    "ambiguous": 0,
+    "no": 4,
+    "precision_strict": 0.9,
+    "precision_loose": 0.9,
+    "raw_share": 0.01102452005322182,
+    "adjusted_share_strict": 0.009922068047899638,
+    "adjusted_share_loose": 0.009922068047899638
+   },
+   "ratio_P1_P0": {
+    "raw": 1.283389789324177,
+    "adjusted_strict": 1.318075999846452,
+    "adjusted_loose": 1.318075999846452
+   }
+  },
+  "claude|limits": {
+   "P0": {
+    "n_match": 481,
+    "n_sample": 40,
+    "yes": 11,
+    "ambiguous": 5,
+    "no": 24,
+    "precision_strict": 0.275,
+    "precision_loose": 0.4,
+    "raw_share": 0.036241711874623266,
+    "adjusted_share_strict": 0.009966470765521398,
+    "adjusted_share_loose": 0.014496684749849307
+   },
+   "P1": {
+    "n_match": 1068,
+    "n_sample": 40,
+    "yes": 24,
+    "ambiguous": 2,
+    "no": 14,
+    "precision_strict": 0.6,
+    "precision_loose": 0.65,
+    "raw_share": 0.05340267013350668,
+    "adjusted_share_strict": 0.032041602080104,
+    "adjusted_share_loose": 0.03471173558677934
+   },
+   "P2": {
+    "n_match": 586,
+    "n_sample": 40,
+    "yes": 22,
+    "ambiguous": 5,
+    "no": 13,
+    "precision_strict": 0.55,
+    "precision_loose": 0.675,
+    "raw_share": 0.05569283406196541,
+    "adjusted_share_strict": 0.030631058734080972,
+    "adjusted_share_loose": 0.037592662991826654
+   },
+   "ratio_P1_P0": {
+    "raw": 1.4735140083407499,
+    "adjusted_strict": 3.2149396545616353,
+    "adjusted_loose": 2.3944602635537184
+   }
+  },
+  "codex|quality": {
+   "P0": {
+    "n_match": 15,
+    "n_sample": 15,
+    "yes": 5,
+    "ambiguous": 2,
+    "no": 8,
+    "precision_strict": 0.3333333333333333,
+    "precision_loose": 0.4666666666666667,
+    "raw_share": 0.00706880301602262,
+    "adjusted_share_strict": 0.0023562676720075403,
+    "adjusted_share_loose": 0.003298774740810556
+   },
+   "P1": {
+    "n_match": 20,
+    "n_sample": 20,
+    "yes": 10,
+    "ambiguous": 3,
+    "no": 7,
+    "precision_strict": 0.5,
+    "precision_loose": 0.65,
+    "raw_share": 0.006738544474393531,
+    "adjusted_share_strict": 0.003369272237196766,
+    "adjusted_share_loose": 0.004380053908355795
+   },
+   "P2": {
+    "n_match": 30,
+    "n_sample": 30,
+    "yes": 12,
+    "ambiguous": 5,
+    "no": 13,
+    "precision_strict": 0.4,
+    "precision_loose": 0.5666666666666667,
+    "raw_share": 0.008119079837618403,
+    "adjusted_share_strict": 0.003247631935047361,
+    "adjusted_share_loose": 0.004600811907983762
+   },
+   "ratio_P1_P0": {
+    "raw": 0.9532794249775383,
+    "adjusted_strict": 1.4299191374663074,
+    "adjusted_loose": 1.327782056218714
+   }
+  },
+  "codex|limits": {
+   "P0": {
+    "n_match": 55,
+    "n_sample": 40,
+    "yes": 26,
+    "ambiguous": 6,
+    "no": 8,
+    "precision_strict": 0.65,
+    "precision_loose": 0.8,
+    "raw_share": 0.025918944392082942,
+    "adjusted_share_strict": 0.016847313854853913,
+    "adjusted_share_loose": 0.020735155513666354
+   },
+   "P1": {
+    "n_match": 103,
+    "n_sample": 40,
+    "yes": 22,
+    "ambiguous": 4,
+    "no": 14,
+    "precision_strict": 0.55,
+    "precision_loose": 0.65,
+    "raw_share": 0.034703504043126686,
+    "adjusted_share_strict": 0.019086927223719678,
+    "adjusted_share_loose": 0.022557277628032345
+   },
+   "P2": {
+    "n_match": 146,
+    "n_sample": 40,
+    "yes": 19,
+    "ambiguous": 6,
+    "no": 15,
+    "precision_strict": 0.475,
+    "precision_loose": 0.625,
+    "raw_share": 0.039512855209742896,
+    "adjusted_share_strict": 0.018768606224627876,
+    "adjusted_share_loose": 0.024695534506089308
+   },
+   "ratio_P1_P0": {
+    "raw": 1.338924283263906,
+    "adjusted_strict": 1.1329359319925358,
+    "adjusted_loose": 1.0878759801519235
+   }
+  }
+ },
+ "mentions": {
+  "claude_side": {
+   "P0": {
+    "n": 5,
+    "乗り換え・不利な比較": 0,
+    "相手を手本にした機能要望": 2,
+    "Codex プラグイン・相互運用": 2,
+    "その他": 1
+   },
+   "P1": {
+    "n": 14,
+    "乗り換え・不利な比較": 2,
+    "相手を手本にした機能要望": 4,
+    "Codex プラグイン・相互運用": 6,
+    "その他": 2
+   },
+   "P2": {
+    "n": 22,
+    "乗り換え・不利な比較": 5,
+    "相手を手本にした機能要望": 6,
+    "Codex プラグイン・相互運用": 6,
+    "その他": 5
+   }
+  },
+  "codex_side": {
+   "P0": {
+    "n": 5,
+    "相手を手本にした機能要望": 5
+   },
+   "P1": {
+    "n": 9,
+    "相手を手本にした機能要望": 6,
+    "その他": 3
+   },
+   "P2": {
+    "n": 20,
+    "相手を手本にした機能要望": 10,
+    "Claude Code からの移行・相互運用の不具合": 7,
+    "その他": 3
+   }
+  }
+ }
+}

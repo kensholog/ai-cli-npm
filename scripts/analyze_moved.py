@@ -107,6 +107,8 @@ def main() -> None:
             if p.exists():
                 h = M.handling(PM.load_jsonl(p))
                 out["handling"][t] = h
+                if not h["n"]:
+                    continue
                 print(f"  {NAME[t]}: {h['n']:,} 件 / 閉じた {pct(h['closed_share'])} / 7 日以内 {pct(h['closed_within_7d_share'])} / 30 日以内 {pct(h['closed_within_30d_share'])}"
                       f" / 中央値 {h['median_days_to_close']:.1f} 日 / 理由 { {k: round(v, 3) for k, v in h['reasons_among_closed'].items()} }"
                       f" / コメントあり {pct(h['commented_share'])}（中央値 {h['median_comments']}）")

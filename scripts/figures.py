@@ -242,3 +242,41 @@ if MONTHLY.exists():
     fig.savefig(OUT / "fig5_monthly_index.png")
     plt.close(fig)
     print("saved: fig5_monthly_index.png")
+
+
+# ---- fig 6: issue の題名に占める「不満の語」の割合（週別、月曜はじまり）。decisions/0005。語の規則そのままの値（適合率の補正なし）
+MOVED = DATA / "moved_weekly.csv"
+if MOVED.exists():
+    with open(MOVED, encoding="utf-8") as f:
+        mv = [r for r in csv.DictReader(f) if "2026-01-05" <= r["week_start_mon"] <= "2026-06-15"]
+    fig, axes = plt.subplots(1, 2, figsize=(9, 4.3), sharey=True)
+    specs = {"claude": [("limits_words", "利用枠・料金の語", "o"), ("quality_words", "品質の語", "s"), ("model_prefix", "[MODEL] テンプレート", "^")],
+             "codex": [("limits_words", "利用枠・料金の語", "o"), ("quality_words", "品質の語", "s")]}
+    for ax, t in zip(axes, ("claude", "codex")):
+        rows = [r for r in mv if r["tool"] == t]
+        xs = [date.fromisoformat(r["week_start_mon"]) for r in rows]
+        ax.axvspan(date(2026, 3, 4), date(2026, 4, 21), color=NEUTRAL, alpha=0.35, lw=0)
+        ax.axvline(date(2026, 4, 23), color=INK2, lw=0.8)
+        for k, (col, label, marker) in enumerate(specs[t]):
+            ys = [100 * int(r[col]) / int(r["issues"]) for r in rows]
+            ax.plot(xs, ys, color=COLOR[t], lw=2.2 - 0.6 * k, marker=marker, ms=4, alpha=1 - 0.22 * k, label=label)
+            ax.annotate(label, (xs[-1], ys[-1]), textcoords="offset points", xytext=(5, -3), fontsize=8, color=INK)
+        ax.set_ylim(0, 9)
+        ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}%"))
+        ax.grid(axis="y")
+        ax.set_axisbelow(True)
+        ax.xaxis.set_major_locator(mdates.MonthLocator())
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%m 月"))
+        ax.set_xlim(date(2026, 1, 1), date(2026, 8, 5))
+        ax.set_title(f"{NAME[t]} の issue", fontsize=10)
+    axes[0].set_ylabel("その週の issue に占める割合")
+    for ax in axes:
+        ax.text(date(2026, 3, 6), 8.8, "03-04〜04-20", fontsize=7.6, color=INK2, va="top")
+        ax.text(date(2026, 4, 25), 8.8, "04-23", fontsize=7.6, color=INK2, va="top")
+    fig.suptitle("issue の題名に占める「不満の語」の割合（週別）", x=0.01, ha="left", fontsize=10.5, fontweight="bold")
+    fig.text(0.01, 0.015, "灰色の帯 = Anthropic が Claude Code の品質に影響があったと説明した期間。縦線 = GPT-5.5 と Anthropic の公表文の日。Bot を除く issue の題名に、先に決めた\n"
+             "語の規則を当てた値（適合率の補正なし。規則は無関係な題名も拾う）。GitHub の公開 API、2026-09-21 取得。issue は利用者のごく一部が書くもの", fontsize=7.5, color=INK2)
+    fig.subplots_adjust(left=0.08, right=0.87, top=0.84, bottom=0.17, wspace=0.32)
+    fig.savefig(OUT / "fig6_complaint_shares.png")
+    plt.close(fig)
+    print("saved: fig6_complaint_shares.png")

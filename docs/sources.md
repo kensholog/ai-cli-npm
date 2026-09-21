@@ -103,3 +103,9 @@
 ### すでに見た issue の題名
 
 - openai/codex の 2026-04-28〜05-10 の issue のうち、題名が npm・install・update・download を含む 70 件（0003 の突出の追加確認）。それ以外の題名は、3 リポジトリとも読んでいない。Hacker News と Zenn の題名も、件数と区分の集計だけを見て、題名そのものは表示していない
+
+### Gemini CLI の提供の変更（✅ 2026-09-22、リポジトリの公式アナウンス）
+
+- google-gemini/gemini-cli の Discussions（Announcements）#28017「Important Update: Gemini CLI Has Stopped Serving Requests for Individual Accounts」（2026-06-18 20:02 UTC）: 2026-06-18 から、Gemini CLI は Google AI Pro・Ultra と無料枠の個人アカウントへの提供を止め、後継の Antigravity CLI への移行を案内している。Gemini Code Assist のライセンスを持つ企業利用と API キーでの利用は影響なし https://github.com/google-gemini/gemini-cli/discussions/28017
+- 最初の告知は 2026-05-19（Google I/O）とする記事が複数ある（🔶 検索結果の要約。公式の告知文は未確認）
+- これは 0004 の「Gemini CLI の issue が 6 月から激減した理由は未確認」への答えの候補。npm の日次の中央値は 2026-08 でも 01 月の 0.90 倍（0004）
