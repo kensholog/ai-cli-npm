@@ -766,18 +766,46 @@
  },
  "handling": {
   "codex": {
-   "n": 9521,
-   "closed_share": 0.1463081609074677,
-   "closed_within_7d_share": 0.105556139061023,
-   "closed_within_30d_share": 0.1334943808423485,
-   "median_days_to_close": 0.6071412037037037,
+   "n": 11888,
+   "closed_share": 0.16857335127860026,
+   "closed_within_7d_share": 0.11877523553162854,
+   "closed_within_30d_share": 0.14855316285329745,
+   "median_days_to_close": 0.7968923611111111,
    "reasons_among_closed": {
-    "COMPLETED": 0.628140703517588,
-    "DUPLICATE": 0.24192390524048815,
-    "NOT_PLANNED": 0.1299353912419239
+    "COMPLETED": 0.6377245508982036,
+    "DUPLICATE": 0.24001996007984033,
+    "NOT_PLANNED": 0.12225548902195608
    },
-   "commented_share": 0.7969751076567587,
-   "median_comments": 1
+   "commented_share": 0.8106493943472409,
+   "median_comments": 2.0
+  },
+  "claude": {
+   "n": 26410,
+   "closed_share": 0.7611132146914048,
+   "closed_within_7d_share": 0.17890950397576674,
+   "closed_within_30d_share": 0.28909503975766754,
+   "median_days_to_close": 37.46327546296296,
+   "reasons_among_closed": {
+    "COMPLETED": 0.12307845380826825,
+    "DUPLICATE": 0.15516640963136163,
+    "NOT_PLANNED": 0.7217551365603702
+   },
+   "commented_share": 0.871790988262022,
+   "median_comments": 2.0
+  },
+  "gemini": {
+   "n": 513,
+   "closed_share": 0.5614035087719298,
+   "closed_within_7d_share": 0.07602339181286549,
+   "closed_within_30d_share": 0.3469785575048733,
+   "median_days_to_close": 15.812436342592592,
+   "reasons_among_closed": {
+    "COMPLETED": 0.1736111111111111,
+    "DUPLICATE": 0.006944444444444444,
+    "NOT_PLANNED": 0.8194444444444444
+   },
+   "commented_share": 0.8966861598440545,
+   "median_comments": 2
   }
  }
 }

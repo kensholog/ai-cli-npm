@@ -2,7 +2,7 @@
 
 公開データで「**npm のダウンロード数で、AI コーディング CLI（Claude Code / Codex CLI / Gemini CLI）の人気を比べてよいか**」を確かめるプロジェクト。どのツールが多く使われているかは主張しない。
 
-状態: **2 つの問いとも、取得と判定まで完了（2026-09-21）。** (1) npm のダウンロード数で比べてよいか（0001・0002）、(2) 報じられた npm の急増は何だったのか、どこまでが本当の伸びか（0003・0004）。記事は未公開。
+状態: **3 つの問いとも、取得と判定まで完了（2026-09-22）。** (1) npm のダウンロード数で比べてよいか（0001・0002）、(2) 報じられた npm の急増は何だったのか、どこまでが本当の伸びか（0003・0004）、(3) なぜ人が動いたのか、公開データで何が比べられるか（0005・0006）。「どちらがいいか」の結論は出さない。記事は未公開。
 
 | 文書 | 内容 |
 |---|---|
@@ -14,6 +14,8 @@
 | [docs/results_why.md](docs/results_why.md) | 結果 2（Q1 突出の正体、Q2 伸びの分解、Q3・Q4 の記述、事後の参考）。数値は `docs/data/why_*` |
 | [docs/decisions/0004-why-verdicts.md](docs/decisions/0004-why-verdicts.md) | 0003 の判定、時刻の記録、逸脱 |
 | [docs/decisions/0005-why-people-moved.md](docs/decisions/0005-why-people-moved.md) | 問い「なぜ人が動いたのか」の追加。予測 R1a・R1m・R1b・R3c・R3x と比較表の定義の凍結（2026-09-22、題名は未読）。「どちらがいいか」は結論を出さない |
+| [docs/results_moved.md](docs/results_moved.md) | 結果 3（なぜ人が動いたのか: R1a・R1m・R1b は保留、R3 は判定不能。適合率の確認、相手への言及の中身、公開データで比べられる項目の表） |
+| [docs/decisions/0006-moved-verdicts.md](docs/decisions/0006-moved-verdicts.md) | 0005 の判定、時刻の記録、逸脱 |
 | [docs/posthoc.md](docs/posthoc.md) | 事後の参考表（事前登録に無い集計。判定には使わない） |
 | [docs/sources.md](docs/sources.md) | 確認済みの事実と出典（API の仕様、3 ツールの配布のしかた、npm 上のパッケージ構造、利用条件、先行） |
 

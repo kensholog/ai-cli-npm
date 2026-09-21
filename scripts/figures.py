@@ -271,7 +271,7 @@ if MOVED.exists():
         ax.set_title(f"{NAME[t]} の issue", fontsize=10)
     axes[0].set_ylabel("その週の issue に占める割合")
     for ax in axes:
-        ax.text(date(2026, 3, 6), 8.8, "03-04〜04-20", fontsize=7.6, color=INK2, va="top")
+        ax.text(date(2026, 4, 19), 8.8, "03-04〜04-20", fontsize=7.6, color=INK2, va="top", ha="right")
         ax.text(date(2026, 4, 25), 8.8, "04-23", fontsize=7.6, color=INK2, va="top")
     fig.suptitle("issue の題名に占める「不満の語」の割合（週別）", x=0.01, ha="left", fontsize=10.5, fontweight="bold")
     fig.text(0.01, 0.015, "灰色の帯 = Anthropic が Claude Code の品質に影響があったと説明した期間。縦線 = GPT-5.5 と Anthropic の公表文の日。Bot を除く issue の題名に、先に決めた\n"
