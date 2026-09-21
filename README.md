@@ -13,6 +13,7 @@
 | [docs/decisions/0003-why-question-and-criteria.md](docs/decisions/0003-why-question-and-criteria.md) | 問い「npm の急増は何だったのか、どこまでが本当の伸びか」の追加。予測 Q1・Q2 と記述 Q3・Q4 の凍結（2026-09-21、代理指標の値は未取得） |
 | [docs/results_why.md](docs/results_why.md) | 結果 2（Q1 突出の正体、Q2 伸びの分解、Q3・Q4 の記述、事後の参考）。数値は `docs/data/why_*` |
 | [docs/decisions/0004-why-verdicts.md](docs/decisions/0004-why-verdicts.md) | 0003 の判定、時刻の記録、逸脱 |
+| [docs/decisions/0005-why-people-moved.md](docs/decisions/0005-why-people-moved.md) | 問い「なぜ人が動いたのか」の追加。予測 R1a・R1m・R1b・R3c・R3x と比較表の定義の凍結（2026-09-22、題名は未読）。「どちらがいいか」は結論を出さない |
 | [docs/posthoc.md](docs/posthoc.md) | 事後の参考表（事前登録に無い集計。判定には使わない） |
 | [docs/sources.md](docs/sources.md) | 確認済みの事実と出典（API の仕様、3 ツールの配布のしかた、npm 上のパッケージ構造、利用条件、先行） |
 
