@@ -78,3 +78,28 @@
 | GitHub のスター履歴 | REST は 404、GraphQL は edges が空 | **取れない**（使わない） |
 | 公式の変更履歴 | https://learn.chatgpt.com/docs/changelog （developers.openai.com/codex/changelog から 308 で転送）。月ごとの見出し、2025-05〜2026-09-18、月 3〜8 件、ラベルは「Codex CLI」「General」など | 🔶 構造だけ。2026-04〜05 の項目の中身は未読 |
 | Zenn の記事数（日本語の関心） | zenn-trend の 2026-09-04 取得ぶん（トピック `codex`・`codexcli`・`geminicli` は全期間。`claudecode` は一覧の上限で 2026-04 以降だけ） | 月別の本数は 2026-03〜07 を見た（codex: 134・125・278・257・236） |
+
+## 「なぜ人が動いたのか」のフェーズ 0（2026-09-22。issue の題名の中身は、下に書いたもの以外は見ていない）
+
+### 当事者の公表文
+
+| 出典 | 日付 | 内容（要約） | 確認 |
+|---|---|---|---|
+| Anthropic「An update on recent Claude Code quality reports」 https://www.anthropic.com/engineering/april-23-postmortem | 2026-04-23 | Claude Code の品質についての利用者の報告を、3 つの変更にさかのぼって説明している。(1) 既定の推論の強さを high から medium に下げた（03-04 開始、04-07 に戻した。Sonnet 4.6・Opus 4.6）、(2) 1 時間以上止まっていたセッションで古い思考を消す変更に不具合があり、毎ターン消えていた（03-26 開始、04-10 の v2.1.101 で修正）、(3) 出力を短くするシステムプロンプトの指示が、コーディングの質を下げた（04-16 に Opus 4.7 と同時に開始、04-20 に戻した）。利用者の報告は 3 月上旬から。API は影響なし。**04-23 に全契約者の利用枠をリセット**。今後の対策（評価の拡充、段階的な展開など）を挙げている | 🔶 WebFetch の要約（当事者の公式ブログ） |
+| OpenAI の変更履歴「GPT-5.5 and Codex app updates」 https://learn.chatgpt.com/docs/changelog | 2026-04-23 | 同じ日に GPT-5.5 の項目がある | ✅ 取得した HTML から項目の日付と題名を確認（中身は未読） |
+
+→ 2026-04-23 には、Anthropic の説明と利用枠のリセット、OpenAI の新モデルが重なっている。Anthropic 自身の説明では、品質に影響のあった期間は 03-04〜04-20。
+
+### issue の受け付け方の変更（✅ GitHub API、2026-03-01〜06-15 のコミット）
+
+- anthropics/claude-code: `.github/ISSUE_TEMPLATE` の変更なし。`.github/workflows` は 03-31・04-27・05-06・05-22 に変更（題名からは issue の受け付けを絞る変更は読み取れない。中身は未確認）
+- openai/codex: `.github/ISSUE_TEMPLATE` は 05-08（3 件）と 05-13 に変更。06-12 に「Translate non-English issues」のワークフロー
+
+### リポジトリの公開範囲（✅ GitHub API）
+
+- openai/codex: Apache-2.0。Rust のソース（言語統計で約 67 MB）とプルリクエストが公開されている
+- anthropics/claude-code: GitHub の判定ではライセンスなし（LICENSE.md はある）。中身は README・CHANGELOG・plugins・examples・scripts などで、製品本体のソースは無い。issue の受け付けと変更履歴の場所
+
+### すでに見た issue の題名
+
+- openai/codex の 2026-04-28〜05-10 の issue のうち、題名が npm・install・update・download を含む 70 件（0003 の突出の追加確認）。それ以外の題名は、3 リポジトリとも読んでいない。Hacker News と Zenn の題名も、件数と区分の集計だけを見て、題名そのものは表示していない
