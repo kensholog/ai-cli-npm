@@ -75,6 +75,7 @@ npm は各期間の日次の合計、Homebrew は analytics の install 数（�
 - 予測「順位は一致しない」は、30 日と 90 日では**外れた**（一致）。365 日では不一致
 - formula `codex`: Homebrew の API は 404 で、取得前に決めた方法（メタデータの homepage）では確認できなかったため、上の表には足していない。取得後に homebrew-core の履歴で OpenAI の Codex だと確認した（2025-10-17 に cask へ移行のため削除）。足した場合の 365 日は Codex CLI 843,515 で、順位は Claude > Codex > Gemini。**どちらでも npm とは不一致**で、30 日・90 日の一致も変わらない（[posthoc.md](posthoc.md) 5 節）
 - Homebrew の数は analytics を無効にしていない利用者の install イベントで、利用者数ではない
+- npm の 365 日の合計には、Codex CLI の 2026-04-30〜05-06 と 05-11 の突出（8 日で 221,667,298、365 日合計の 42.1%。原因は未確認）が入っている。これを前後の中央値に置き換えると、npm の 365 日の順位は Claude > Codex > Gemini に入れ替わる（[posthoc.md](posthoc.md) 7 節。事後の確認で、上の表は変えない）
 
 ## 記述
 

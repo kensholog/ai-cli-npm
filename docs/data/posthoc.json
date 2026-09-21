@@ -433,5 +433,166 @@
   "codex_ratio": 1.063975326675801,
   "codex_platform_linux_share": 0.8683087364797951,
   "codex_half_of_total_30d": 37996672.76678737
+ },
+ "spikes": {
+  "rule": "その日の値 > 前後 14 日（その日を除く、0 の日を除く）の中央値 × 5。公開から 14 日以内は対象外",
+  "per_tool": {
+   "claude": [],
+   "codex": [
+    {
+     "day": "2025-05-27",
+     "downloads": 33774,
+     "baseline": 3564.0,
+     "ratio": 9.476430976430976
+    },
+    {
+     "day": "2026-04-30",
+     "downloads": 13368238,
+     "baseline": 919588.0,
+     "ratio": 14.537203617272082
+    },
+    {
+     "day": "2026-05-01",
+     "downloads": 23892370,
+     "baseline": 926408.5,
+     "ratio": 25.790318201959504
+    },
+    {
+     "day": "2026-05-02",
+     "downloads": 45984321,
+     "baseline": 926408.5,
+     "ratio": 49.637196765789604
+    },
+    {
+     "day": "2026-05-03",
+     "downloads": 44330985,
+     "baseline": 926408.5,
+     "ratio": 47.852524021530456
+    },
+    {
+     "day": "2026-05-04",
+     "downloads": 33713297,
+     "baseline": 931499.0,
+     "ratio": 36.192520872271466
+    },
+    {
+     "day": "2026-05-05",
+     "downloads": 33271172,
+     "baseline": 931499.0,
+     "ratio": 35.717882681570245
+    },
+    {
+     "day": "2026-05-06",
+     "downloads": 19244666,
+     "baseline": 949198.5,
+     "ratio": 20.274648558757733
+    },
+    {
+     "day": "2026-05-11",
+     "downloads": 7862249,
+     "baseline": 1074022.0,
+     "ratio": 7.320379843243434
+    }
+   ],
+   "gemini": []
+  },
+  "totals": {
+   "30d": {
+    "full": {
+     "claude": 61861381,
+     "codex": 78292095,
+     "gemini": 1359228
+    },
+    "spike_sum": {
+     "claude": 0,
+     "codex": 0,
+     "gemini": 0
+    },
+    "spike_share": {
+     "claude": 0.0,
+     "codex": 0.0,
+     "gemini": 0.0
+    },
+    "adjusted": {
+     "claude": 61861381,
+     "codex": 78292095,
+     "gemini": 1359228
+    },
+    "rank_full": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "rank_adjusted": [
+     "codex",
+     "claude",
+     "gemini"
+    ]
+   },
+   "90d": {
+    "full": {
+     "claude": 173534747,
+     "codex": 198799600,
+     "gemini": 5024286
+    },
+    "spike_sum": {
+     "claude": 0,
+     "codex": 0,
+     "gemini": 0
+    },
+    "spike_share": {
+     "claude": 0.0,
+     "codex": 0.0,
+     "gemini": 0.0
+    },
+    "adjusted": {
+     "claude": 173534747,
+     "codex": 198799600,
+     "gemini": 5024286
+    },
+    "rank_full": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "rank_adjusted": [
+     "codex",
+     "claude",
+     "gemini"
+    ]
+   },
+   "365d": {
+    "full": {
+     "claude": 465005929,
+     "codex": 526459636,
+     "gemini": 26719019
+    },
+    "spike_sum": {
+     "claude": 0,
+     "codex": 221667298,
+     "gemini": 0
+    },
+    "spike_share": {
+     "claude": 0.0,
+     "codex": 0.4210527889359404,
+     "gemini": 0.0
+    },
+    "adjusted": {
+     "claude": 465005929,
+     "codex": 312377370.0,
+     "gemini": 26719019
+    },
+    "rank_full": [
+     "codex",
+     "claude",
+     "gemini"
+    ],
+    "rank_adjusted": [
+     "claude",
+     "codex",
+     "gemini"
+    ]
+   }
+  }
  }
 }

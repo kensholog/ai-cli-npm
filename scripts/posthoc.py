@@ -7,6 +7,7 @@
 3. P1b の大きさ: 二重計上だけなら最大 2 倍、という上限と比べる。月別の中央値
 4. P3 に formula `codex` を足した場合（homebrew-core の履歴で OpenAI の Codex と確認。2025-10-17 に cask へ移行）
 5. Claude Code のプラットフォーム別 8 パッケージの合計 ÷ 本体、Codex のプラットフォーム版 ÷ 安定版
+6. 突出した日（前後 14 日の 0 でない日の中央値の 5 倍を超える日）と、それを除いた期間合計・順位
 """
 import json
 import sys
@@ -122,8 +123,30 @@ def main() -> None:
         "codex_half_of_total_30d": r["P3"]["periods"]["30d"]["npm"]["codex"] * (1 - r["P1a"]["s"]),
     }
 
+    # 6. 突出した日
+    spikes = {}
+    for t in L.TOOLS:
+        first = r["A"]["per_tool"][t]["first_nonzero"]
+        rows = []
+        for d in M.days((first + timedelta(days=14), last)):
+            near = [dailies[t][x] for x in M.days((d - timedelta(days=14), min(d + timedelta(days=14), last)))
+                    if x != d and dailies[t].get(x, 0) > 0]
+            base = median(near)
+            if dailies[t][d] > 5 * base:
+                rows.append({"day": d, "downloads": dailies[t][d], "baseline": base, "ratio": dailies[t][d] / base})
+        spikes[t] = rows
+    out["spikes"] = {"rule": "その日の値 > 前後 14 日（その日を除く、0 の日を除く）の中央値 × 5。公開から 14 日以内は対象外", "per_tool": spikes, "totals": {}}
+    for period, n in M.NPM_DAYS.items():
+        w = L.window(last, n)
+        full = {t: sum(dailies[t].get(d, 0) for d in M.days(w)) for t in L.TOOLS}
+        spike_sum = {t: sum(x["downloads"] for x in spikes[t] if w[0] <= x["day"] <= w[1]) for t in L.TOOLS}
+        # 突出した日は、その日の baseline（前後の中央値）に置き換える
+        adj = {t: full[t] - spike_sum[t] + sum(x["baseline"] for x in spikes[t] if w[0] <= x["day"] <= w[1]) for t in L.TOOLS}
+        out["spikes"]["totals"][period] = {"full": full, "spike_sum": spike_sum, "spike_share": {t: spike_sum[t] / full[t] for t in L.TOOLS},
+                                           "adjusted": adj, "rank_full": M.rank(full), "rank_adjusted": M.rank(adj)}
+
     (ROOT / "docs" / "data" / "posthoc.json").write_text(json.dumps(M.to_jsonable(out), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps(M.to_jsonable({k: v for k, v in out.items() if k != "monthly_median_nonzero"}), ensure_ascii=False, indent=1))
+    print(json.dumps(M.to_jsonable(out["spikes"]), ensure_ascii=False, indent=1))
     print("月別の中央値（0 の日を除く）")
     for m in months:
         print(" ", m, " / ".join(f"{t} {out['monthly_median_nonzero'][t][m]:,.0f}" for t in L.TOOLS))
