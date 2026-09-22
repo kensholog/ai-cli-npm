@@ -166,7 +166,7 @@ def main() -> None:
                                 for line in (r.get("body") or "").splitlines() if M.SPIKE_NOTE_RE.search(line)]
     if issues_c:
         hit = [i for i in M.human_issues(issues_c) if "2026-04-28" <= i["createdAt"][:10] <= "2026-05-10" and M.SPIKE_ISSUE_RE.search(i["title"] or "")]
-        sp["issues_matching"] = {"n": len(hit), "titles": [(i["createdAt"][:10], i["number"], i["title"][:120]) for i in hit[:60]]}
+        sp["issues_matching"] = {"n": len(hit), "numbers": [(i["createdAt"][:10], i["number"]) for i in hit]}  # 題名は公開データに入れない（番号だけ）
     out["spike_checks"] = sp
     print("\n[突出の追加確認]")
     for pkg, x in sp["npm_related"].items():
@@ -177,8 +177,7 @@ def main() -> None:
         print(f"    {x['published']} {x['tag']}: {x['line']}")
     if "issues_matching" in sp:
         print(f"  issue（04-28〜05-10、題名に npm|install|update|download）: {sp['issues_matching']['n']} 件")
-        for t in sp["issues_matching"]["titles"][:40]:
-            print(f"    {t[0]} #{t[1]} {t[2]}")
+        print("    番号: " + ", ".join(f"#{n}" for _, n in sp["issues_matching"]["numbers"]))
 
     (ROOT / "docs" / "data" / "why_summary.json").write_text(json.dumps(M.to_jsonable(out), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 

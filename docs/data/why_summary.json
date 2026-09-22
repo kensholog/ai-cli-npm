@@ -2107,306 +2107,286 @@
   ],
   "issues_matching": {
    "n": 70,
-   "titles": [
+   "numbers": [
     [
      "2026-04-28",
-     19952,
-     "Windows app 26.422.8496.0: all shell commands fail with \"batch file arguments are invalid\" after update"
+     19952
     ],
     [
      "2026-04-28",
-     19972,
-     "Can't open codex desktop after update"
+     19972
     ],
     [
      "2026-04-28",
-     19993,
-     "Blank GUI window after update on macOS Tahoe (Apple Silicon) while CLI works normally"
+     19993
     ],
     [
      "2026-04-28",
-     20048,
-     "Windows Codex Desktop Browser Use fails to start app-server despite working npm CLI"
+     20048
     ],
     [
      "2026-04-29",
-     20143,
-     "Failed to update connection"
+     20143
     ],
     [
      "2026-04-29",
-     20211,
-     "Computer Use unavailable when Codex is updated under a different macOS user"
+     20211
     ],
     [
      "2026-04-29",
-     20217,
-     "Codex Windows desktop app stuck on logo/loading screen after clean reinstall"
+     20217
     ],
     [
      "2026-04-30",
-     20492,
-     "Desktop should update or restart remote Codex app-server when version is too old"
+     20492
     ],
     [
      "2026-04-30",
-     20493,
-     "Codex Desktop: chats disappear after update/import; imported threads open blank despite JSONL turns"
+     20493
     ],
     [
      "2026-04-30",
-     20526,
-     "Slack installation stalls on Windows"
+     20526
     ],
     [
      "2026-05-01",
-     20547,
-     "Codex Desktop sluggish after today's update to 26.429.20946"
+     20547
     ],
     [
      "2026-05-01",
-     20572,
-     "Brew package shows new update but update does not work"
+     20572
     ],
     [
      "2026-05-01",
-     20573,
-     "Codex Mac app high memory usage regression on macOS after update (26.422.62136)"
+     20573
     ],
     [
      "2026-05-01",
-     20579,
-     "Browser Use broken after today update: no node_repl/js or no Codex IAB backend discovered"
+     20579
     ],
     [
      "2026-05-01",
-     20589,
-     "plugin disppeared + constantly disconnecting + high use of energy = > heat => fans - all after most recent update"
+     20589
     ],
     [
      "2026-05-01",
-     20595,
-     "Provide a first-class standalone installer for native Codex binaries"
+     20595
     ],
     [
      "2026-05-01",
-     20597,
-     "Add winget install instructions"
+     20597
     ],
     [
      "2026-05-01",
-     20615,
-     "Update removes existing Commit Instructions"
+     20615
     ],
     [
      "2026-05-01",
-     20641,
-     "Windows: codex fails silently without Visual C++ Redistributable installed"
+     20641
     ],
     [
      "2026-05-01",
-     20673,
-     "mcp-search fails after clean reinstall on Windows: ChatGPT backend plugin/connectors requests return Cloudflare 403, Set"
+     20673
     ],
     [
      "2026-05-01",
-     20690,
-     "Auto Open/Update PR on web agent run"
+     20690
     ],
     [
      "2026-05-01",
-     20705,
-     "Codex App skill install spinner finishes, but the skill is not added on Windows"
+     20705
     ],
     [
      "2026-05-02",
-     20710,
-     "Gmail plugin shows installed checkmark while required app connection returns to Connect and exposes no tools"
+     20710
     ],
     [
      "2026-05-02",
-     20741,
-     "Codex Desktop project chat histories disappeared after recent update"
+     20741
     ],
     [
      "2026-05-02",
-     20775,
-     "ALT+ENTER no longer inserts blank line after update"
+     20775
     ],
     [
      "2026-05-02",
-     20776,
-     "Notification updates when Pet is active, cause desktops to switch switching"
+     20776
     ],
     [
      "2026-05-02",
-     20778,
-     "Codex Desktop: installed hatch-pet skill is not discoverable from slash command autocomplete"
+     20778
     ],
     [
      "2026-05-02",
-     20782,
-     "The Install.ps1 doesn't return OSArchitecture correctly for all Windows PowerShell Versions Correctly"
+     20782
     ],
     [
      "2026-05-02",
-     20810,
-     "Codex Desktop WSL runtime fails to activate WSL fnm Node/npm and falls back to Windows npm"
+     20810
     ],
     [
      "2026-05-02",
-     20821,
-     "Windows Codex App no longer shows gpt-5.5 after reinstall; CLI still has access"
+     20821
     ],
     [
      "2026-05-02",
-     20827,
-     "Windows npm install can leave Codex silently unable to launch without VC++ runtime"
+     20827
     ],
     [
      "2026-05-03",
-     20871,
-     "Codex CLI permanently fails with 401 on Linux VMs despite valid API key - auth.json not updated by codex login"
+     20871
     ],
     [
      "2026-05-04",
-     21074,
-     "Feature request: allow choosing install location for Codex app on Windows"
+     21074
     ],
     [
      "2026-05-05",
-     21177,
-     "Codex Desktop on Windows refreshes app-server-updated threads only after window focus returns"
+     21177
     ],
     [
      "2026-05-05",
-     21199,
-     "macOS 15.6 arm64: codex CLI installs via npm but native binary fails to execute (`spawn Unknown system error -88`)"
+     21199
     ],
     [
      "2026-05-05",
-     21247,
-     "Codex dependencies show as not installed and reinstall fails from Settings on Windows"
+     21247
     ],
     [
      "2026-05-06",
-     21327,
-     "Progress checklist can remain stale when work completes without update_plan calls"
+     21327
     ],
     [
      "2026-05-06",
-     21339,
-     "npm codex wrapper aborts on Linux shutdown in uv__epoll_ctl_prep during app-server teardown"
+     21339
     ],
     [
      "2026-05-06",
-     21425,
-     "Separate installed plugins from per-session skill metadata injection"
+     21425
     ],
     [
      "2026-05-07",
-     21470,
-     "Windows Codex Desktop sandbox blocks Node child_process, WSL, Schannel clients, and pip temp installs"
+     21470
     ],
     [
      "2026-05-07",
-     21520,
-     "Failed to parse the request body as JSON: client_metadata.x-codex-installation-id: EOF while parsing a string"
+     21520
     ],
     [
      "2026-05-07",
-     21538,
-     "Windows Codex app should provide a non-Microsoft Store installer for enterprise environments"
+     21538
     ],
     [
      "2026-05-07",
-     21607,
-     "Model switch confirmation should update the top status panel immediately"
+     21607
     ],
     [
      "2026-05-07",
-     21615,
-     "Provide a supported way for local IDE/wrapper installers to request trust   for installed hooks"
+     21615
     ],
     [
      "2026-05-08",
-     21618,
-     "Browser Use unavailable: node_repl / JavaScript execution tool not exposed despite Browser plugin installed"
+     21618
     ],
     [
      "2026-05-08",
-     21639,
-     "Hooks no longer run after Codex Desktop update"
+     21639
     ],
     [
      "2026-05-08",
-     21641,
-     "Settings entry missing/unresponsive after update on macOS (API key auth); Cmd+, still works"
+     21641
     ],
     [
      "2026-05-08",
-     21650,
-     "Codex Desktop for Windows: workspace dependencies Diagnose/Reinstall buttons are disabled"
+     21650
     ],
     [
      "2026-05-08",
-     21670,
-     "Windows Codex Desktop: Chrome plugin and Browser Use setup hang; plugin uninstall fails with os error 5"
+     21670
     ],
     [
      "2026-05-08",
-     21674,
-     "Windows: Chrome plugin shows \"Install failed\" in Codex UI even though Chrome extension is installed and enabled"
+     21674
     ],
     [
      "2026-05-08",
-     21680,
-     "Recent projects sidebar order does not update when switching active workspace"
+     21680
     ],
     [
      "2026-05-08",
-     21698,
-     "Chrome plugin installed and enabled, but automation calls time out on Windows"
+     21698
     ],
     [
      "2026-05-08",
-     21700,
-     "Computer Use Chrome extension is unavailable in Chrome Web Store; is there an offline installer?"
+     21700
     ],
     [
      "2026-05-08",
-     21714,
-     "Automation-specific memory.md appears reset after Codex Desktop update"
+     21714
     ],
     [
      "2026-05-08",
-     21734,
-     "All historical conversations missing from sidebar after auto-update; local data is intact"
+     21734
     ],
     [
      "2026-05-08",
-     21758,
-     "Installed custom skill (aihot) does not appear in available skills in fresh non-project sessions"
+     21758
     ],
     [
      "2026-05-08",
-     21769,
-     "Project-local model_provider and model_providers ignored after Windows 26.506.x update"
+     21769
     ],
     [
      "2026-05-08",
-     21771,
-     "Codex Web loses track of commits, state desyncs, stops suggesting to update PR or create new, does not show changes, not"
+     21771
     ],
     [
      "2026-05-08",
-     21774,
-     "Windows desktop app silently closed/restarted after 26.506 update; no crash artifact recorded"
+     21774
     ],
     [
      "2026-05-08",
-     21785,
-     "codex-linux-sandbox binary absent from @openai/codex npm package; permissions.network_access unusable without danger-ful"
+     21785
+    ],
+    [
+     "2026-05-09",
+     21869
+    ],
+    [
+     "2026-05-09",
+     21872
+    ],
+    [
+     "2026-05-09",
+     21897
+    ],
+    [
+     "2026-05-09",
+     21917
+    ],
+    [
+     "2026-05-09",
+     21932
+    ],
+    [
+     "2026-05-09",
+     21967
+    ],
+    [
+     "2026-05-10",
+     22009
+    ],
+    [
+     "2026-05-10",
+     22038
+    ],
+    [
+     "2026-05-10",
+     22054
+    ],
+    [
+     "2026-05-10",
+     22057
     ]
    ]
   }
